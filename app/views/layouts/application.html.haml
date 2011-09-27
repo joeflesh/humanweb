@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %title
+      humanweb -
+      = yield :title
+    = stylesheet_link_tag 'reset'
+    = stylesheet_link_tag 'default'
+
+    = javascript_include_tag 'jquery-1.6.4.min'
+    = javascript_include_tag 'jquery.lettering-0.6.1.min'
+
+  %body
+
+    #page-header
+      .page
+        #biglogo
+          .none human<b>web</b>
+
+        %ul#nav-menu
+          %li.first
+            = link_to "WHAT WE DO", root_path
+          %li
+            = link_to "THE TEAM", team_path
+          %li
+            = link_to "OUR WORK", portfolio_path
+          %li
+            = link_to "HIRE US", contact_path
+    #btm-line
+    
+    #white
+      #bodyContainer.page
+        = yield
+
+    #page-footer
+      .page
+        &copy; #{DateTime.now.year} Human Web Solutions LLC

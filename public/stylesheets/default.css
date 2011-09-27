@@ -1,0 +1,237 @@
+/* HumanWeb */
+
+
+/* general stuff */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #e2deda;
+  /*background: url('../images/background_slice.png') repeat-x;*/
+  color: #222;
+}
+#bodyContainer {
+  text-align: left;
+  margin: 0 auto 0;
+  display: block;
+  position: relative;
+  width: 940px;
+  min-width: 940px;
+}
+.page {
+  margin: 0 auto 0;
+  width: 940px;
+  min-width: 940px;
+  position: relative;
+}
+a {
+  color: #2C3088;
+  text-decoration: none;
+}
+a:visited {color: #2C3088;}
+a:hover {text-decoration: underline;}
+a img {border: 0}
+p {
+  line-height: 1.4em;
+  margin-bottom: 1.2em;
+}
+p:last-child { margin-bottom: 0; }
+.clear { clear: both; }
+.clearfix { overflow: auto; width: 100%; }
+.none {
+  position: absolute;
+  left: -9999px;
+}
+
+h2 {
+  font-family: 'CartoGothicStdBook';
+  font-size: 24pt;
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'CartoGothicStdBold';
+    src: url('../fonts/CartoGothicStd-Bold-webfont.eot');
+    src: url('../fonts/CartoGothicStd-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CartoGothicStd-Bold-webfont.woff') format('woff'),
+         url('../fonts/CartoGothicStd-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/CartoGothicStd-Bold-webfont.svg#CartoGothicStdBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CartoGothicStdBook';
+    src: url('../fonts/CartoGothicStd-Book-webfont.eot');
+    src: url('../fonts/CartoGothicStd-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CartoGothicStd-Book-webfont.woff') format('woff'),
+         url('../fonts/CartoGothicStd-Book-webfont.ttf') format('truetype'),
+         url('../fonts/CartoGothicStd-Book-webfont.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/******************** logo & top */
+#page-header {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf7f2', endColorstr='#e2deda'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#faf7f2), to(#e2deda)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #faf7f2,  #e2deda); /* for firefox 3.6+ */ 
+  background-color: #e2deda; /* for non-css3 browsers */
+  padding: 10px 0 7px;
+  border-bottom: 1px solid #fff;
+}
+  #biglogo {
+    background-image: url('../images/humanweb_logo_med.png');
+    width: 383px;
+    height: 100px;
+  }
+  #btm-line { border-top: 1px solid #ccc; }
+
+#white {
+  background-color: #fff;
+  padding: 40px 0;
+}
+/************ menubar */
+  ul#nav-menu {
+    float: right;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 83px;
+  }
+    ul#nav-menu li {
+      display: inline;
+      font-size: 15px;
+      font-weight: bold;
+      float: left;
+    }
+      ul#nav-menu li.first a {
+        margin-left: 0; padding-left: 0; border-left: 0; 
+      }
+      ul#nav-menu li a {
+        float: left;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 2px solid #efefef;
+        color: #333;
+      }
+      ul#nav-menu li a:hover {
+        color: #111;
+        text-decoration: none;
+      }
+
+/************* footer */
+#page-footer {
+  padding: 20px 0;
+  border-top: 1px solid #bbb;
+  text-align: right;
+  font-size: 11px;
+  background-color: #e2deda;
+}
+
+
+/************* theme colors */
+.light-blue { background-color: #e0e0ef; }
+.rounded-big {
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+}
+.hw-red { color: #7a0f2e; }
+.hw-blue { color: #085586; }
+
+
+/************** what we do */
+.tag {
+  font-family: 'CartoGothicStdBook';
+  font-size: 24pt;
+  text-align: center;
+  padding: 24px 0 20px;
+}
+
+#header .left_cell {
+  width:473px; text-align: right; padding-right: 18px;
+}
+  
+#header .right_cell {
+  border-left: 1px solid silver; padding-left: 18px;
+}
+  .right_cell #summary {
+  }
+
+
+/************ portfolio */
+.project {
+  border-bottom: 1px solid #ccc;  
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.project:first-child .text, .project:first-child .screen { border-top: 0; }
+.project .text, .project .screen {
+  border-top: 1px solid silver;
+  padding: 50px 0;
+}
+
+  .project .text {
+    vertical-align: middle;
+    display: table-cell;
+    width: 468px;
+  }
+    .project .text .title {
+      margin-bottom: 1em;
+      font-weight: bold;
+    }
+    .project .text .description {
+      line-height: 1.4em;
+    }
+  .project .screen {
+    display: table-cell;
+    padding-left: 34px;
+  }
+    .project .screen img {
+      padding: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 0px 3px #aaa;
+      width: 383px;
+      padding: 16px;
+    }
+
+/**************** team */
+.image.joe { background: url('../images/mugshot_joe.jpg') -80px -60px no-repeat;}
+.image.declan { background: url('../images/mugshot_declan.jpg') -70px -10px no-repeat; }
+
+.person {
+  min-height: 230px;
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.person:last-child { padding-bottom: 0; border: 0; }
+
+.person h2 { margin-bottom: 10px; }
+
+.person .image-border {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  float: left;
+}
+  .person .image {
+    width: 300px;
+    height: 200px;
+  }
+.person .bio {
+  float: right;
+  max-width: 555px;
+}
+
+
+
