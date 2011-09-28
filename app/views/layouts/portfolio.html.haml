@@ -1,0 +1,11 @@
+- content_for :content do
+  %h1.dark-grey
+    Case Study:
+    = yield :study_title
+  = link_to "<< back to portfolio", work_path
+
+  = yield :study_logo
+
+  = yield :study_body
+
+= render :template => 'layouts/application'

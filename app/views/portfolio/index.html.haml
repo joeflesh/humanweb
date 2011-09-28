@@ -1,22 +1,30 @@
 .project
   %h2 Help Around Town
   %p
-    How do you create jobs during an economic downturn? Hyper-local, neighborhood
-    job boards.
+    When a Boston-based startup needed a full range of turn-key
+    design and development services, they turned to
     = render 'shared/humanweb'
-    was hired by this Boston-based startup to provide
-    a full range of design and development services.
-  = image_tag 'logo_hat.png'
+    \.
+    Help Around Town provides a valuable source of employment during
+    the economic downturn by creating local neighborhood job markets.
+  -#= image_tag 'logo_hat.png'
+  .read-more
+    = link_to 'Read the case study >>', work_helparoundtown_path 
 
 .project
   %h2 South Side Health
   %p
-    A national, community-edited database used by social workers to find
-    services for their clients.
-  = image_tag 'logo_ssh.png'
-  %p In partnership with
-  = image_tag 'logo_urbanhealth.png'
-  = image_tag 'logo_healthleads.png'
+    The first of its kind, this database of social services is used
+    by social workers nationwide to help their clients find employment,
+    education, food and shelter. Developed at the University of Chicago
+    Medical Center in partnership with HealthLeads, an award-winning
+    service organization.
+  -#= image_tag 'logo_ssh.png'
+    %p In partnership with
+    = image_tag 'logo_urbanhealth.png'
+    = image_tag 'logo_healthleads.png'
+  .read-more
+    = link_to 'Read the case study >>', work_southsidehealth_path 
 
 .project
   %h2 Global Green Arts
@@ -24,11 +32,14 @@
     We worked with the veteran graphic designers at Global Green Arts to create
     a promotional website showcasing their line of eco-friendly art materials, sold at
     Blick art stores.
-  = image_tag 'logo_globalgreen.png'
-  = image_tag 'logo_blick.jpg'
+  -#= image_tag 'logo_globalgreen.png'
+  .read-more
+    = link_to 'Read the case study >>', work_globalgreenarts_path 
 
 .project
   %h2 Project EVIE
   %p
     Design and social media campaign for a non-profit promoting electric vehicles.
-  = image_tag 'logo_evie.png'
+  -#= image_tag 'logo_evie.png'
+  .read-more
+    = link_to 'Read the case study >>', work_projectevie_path 

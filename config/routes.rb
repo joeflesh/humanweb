@@ -5,6 +5,13 @@ Humanweb::Application.routes.draw do
 
   get "team" => 'home#team', :as => :team
   get "contact" => 'home#contact', :as => :contact
-  get 'portfolio' => 'portfolio#index', :as => :portfolio 
+
+  scope :controller => :portfolio do
+    get 'work'=> :index
+    get 'work/southsidehealth' => :southsidehealth
+    get 'work/helparoundtown' => :helparoundtown
+    get 'work/globalgreenarts' => :globalgreenarts
+    get 'work/projectevie' => :projectevie
+  end
 
 end

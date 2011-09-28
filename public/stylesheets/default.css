@@ -45,6 +45,13 @@ p:last-child { margin-bottom: 0; }
   left: -9999px;
 }
 
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: 'CartoGothicStdBold';
+}
+ 
 h2 {
   font-family: 'CartoGothicStdBook';
   font-size: 24pt;
@@ -86,9 +93,10 @@ h2 {
   border-bottom: 1px solid #fff;
 }
   #biglogo {
-    background-image: url('../images/humanweb_logo_med.png');
-    width: 383px;
-    height: 100px;
+    /*background-image: url('../images/humanweb_logo_med.png');*/
+    background-image: url('../images/humanweb_logo_ev.png');
+    width: 218px;
+    height: 103px;
   }
   #btm-line { border-top: 1px solid #ccc; }
 
@@ -110,8 +118,11 @@ h2 {
       font-weight: bold;
       float: left;
     }
-      ul#nav-menu li.first a {
+      ul#nav-menu li:first-child a {
         margin-left: 0; padding-left: 0; border-left: 0; 
+      }
+      ul#nav-menu li.active a {
+        color: #d71f26;
       }
       ul#nav-menu li a {
         float: left;
@@ -121,7 +132,7 @@ h2 {
         color: #333;
       }
       ul#nav-menu li a:hover {
-        color: #111;
+        color: #e01f26;
         text-decoration: none;
       }
 
@@ -144,6 +155,7 @@ h2 {
 }
 .hw-red { color: #7a0f2e; }
 .hw-blue { color: #085586; }
+.dark-grey { color: #444; }
 
 
 /************** what we do */
@@ -171,36 +183,11 @@ h2 {
   margin-bottom: 40px;
   padding-bottom: 40px;
 }
-.project:first-child .text, .project:first-child .screen { border-top: 0; }
-.project .text, .project .screen {
-  border-top: 1px solid silver;
-  padding: 50px 0;
-}
 
-  .project .text {
-    vertical-align: middle;
-    display: table-cell;
-    width: 468px;
+  .project .read-more {
+    text-align: right;
   }
-    .project .text .title {
-      margin-bottom: 1em;
-      font-weight: bold;
-    }
-    .project .text .description {
-      line-height: 1.4em;
-    }
-  .project .screen {
-    display: table-cell;
-    padding-left: 34px;
-  }
-    .project .screen img {
-      padding: 10px;
-      border: 1px solid #ddd;
-      box-shadow: 0px 0px 3px #aaa;
-      width: 383px;
-      padding: 16px;
-    }
-
+ 
 /**************** team */
 .image.joe { background: url('../images/mugshot_joe.jpg') -80px -60px no-repeat;}
 .image.declan { background: url('../images/mugshot_declan.jpg') -70px -10px no-repeat; }

@@ -17,20 +17,33 @@
         #biglogo
           .none human<b>web</b>
 
+        - @highlight ||= request.fullpath
+
         %ul#nav-menu
-          %li.first
-            = link_to "WHAT WE DO", root_path
-          %li
-            = link_to "THE TEAM", team_path
-          %li
-            = link_to "OUR WORK", portfolio_path
-          %li
-            = link_to "HIRE US", contact_path
+          - if @highlight == root_path
+            %li.active= link_to "WHAT WE DO", root_path
+          - else
+            %li= link_to "WHAT WE DO", root_path
+
+          - if @highlight == team_path
+            %li.active= link_to "THE TEAM", team_path
+          - else
+            %li= link_to "THE TEAM", team_path
+
+          - if @highlight.start_with?(work_path)
+            %li.active= link_to "OUR WORK", work_path
+          - else
+            %li= link_to "OUR WORK", work_path
+
+          - if @highlight == contact_path
+            %li.active= link_to "HIRE US", contact_path
+          - else
+            %li= link_to "HIRE US", contact_path
     #btm-line
     
     #white
       #bodyContainer.page
-        = yield
+        = content_for?(:content) ? yield(:content) : yield
 
     #page-footer
       .page
