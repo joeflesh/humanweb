@@ -56,6 +56,10 @@ h2 {
   font-family: 'CartoGothicStdBook';
   font-size: 24pt;
 }
+h3 {
+  font-weight: bold;
+  margin: 1em 0 0.5em;
+}
 
 
 /* fonts */
@@ -156,6 +160,8 @@ h2 {
 .hw-red { color: #7a0f2e; }
 .hw-blue { color: #085586; }
 .dark-grey { color: #444; }
+.light-grey, a.light-grey { color: #7f7f7f; }
+.light-green { background-color: #ddeecc; }
 
 
 /************** what we do */
@@ -166,27 +172,48 @@ h2 {
   padding: 24px 0 20px;
 }
 
-#header .left_cell {
-  width:473px; text-align: right; padding-right: 18px;
-}
-  
-#header .right_cell {
-  border-left: 1px solid silver; padding-left: 18px;
-}
-  .right_cell #summary {
-  }
-
-
 /************ portfolio */
 .project {
   border-bottom: 1px solid #ccc;  
   margin-bottom: 40px;
   padding-bottom: 40px;
 }
-
   .project .read-more {
     text-align: right;
   }
+
+.smaller-font { font-size: 0.8em; }
+.no-bottom-margin { margin-bottom: 0; }
+
+.left-body {
+  float: left;
+  width: 600px;
+}
+.right-sidebar {
+  float: right;
+  width: 290px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.screenshot {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid silver;
+}
+.screenshot img {
+  margin: 5px;
+}
+
+.quote {
+  width: 90%;
+  background-color: #ddd;
+  margin: 1.6em auto;
+  padding: 0.8em;
+  line-height: 1.5em;
+}
+  .quote .text { font-style: italic; }
+  .quote .dude { text-align: right; }
  
 /**************** team */
 .image.joe { background: url('../images/mugshot_joe.jpg') -80px -60px no-repeat;}
