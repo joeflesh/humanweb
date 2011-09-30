@@ -17,14 +17,15 @@ body {
   margin: 0 auto 0;
   display: block;
   position: relative;
-  width: 940px;
-  min-width: 940px;
+  width: 960px;
+  min-width: 960px;
 }
 .page {
   margin: 0 auto 0;
   width: 940px;
   min-width: 940px;
   position: relative;
+  padding: 0 10px;
 }
 a {
   color: #2C3088;
@@ -233,10 +234,6 @@ h3 {
 .image.declan { background: url('../images/mugshot_declan.jpg') -70px -10px no-repeat; }
 
 .person {
-  min-height: 230px;
-  overflow: auto;
-  width: 100%;
-  padding-bottom: 40px;
   margin-bottom: 50px;
   border-bottom: 1px solid #ccc;
 }
@@ -249,16 +246,11 @@ h3 {
   padding: 8px;
   border: 1px solid #ccc;
   background-color: #fff;
-  float: left;
 }
   .person .image {
     width: 300px;
     height: 200px;
   }
-.person .bio {
-  float: right;
-  max-width: 555px;
-}
 
 
 

@@ -1,17 +1,25 @@
 -content_for :title do
   Team
 
-.person
-  .image-border
-    .image.declan 
-  .bio
-    %h2 Declan Frye
-    = render 'bio_declan'
+.container_12
+
+  .person
+    .grid_4
+      .image-border
+        .image.declan 
+    .grid_8.bio
+      %h2 Declan Frye
+      = render 'bio_declan'
+
+  .clear
 
 
-.person
-  .image-border
-    .image.joe
-  .bio
-    %h2 Joseph Flesh
-    = render 'bio_joe'
+  .person
+    .grid_4
+      .image-border
+        .image.joe
+    .bio.grid_8
+      %h2 Joseph Flesh
+      = render 'bio_joe'
+
+  .clear
