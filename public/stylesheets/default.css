@@ -44,6 +44,7 @@ p:last-child { margin-bottom: 0; }
   position: absolute;
   left: -9999px;
 }
+ul li { line-height: 1.4em; }
 
 
 h1 {
@@ -51,13 +52,16 @@ h1 {
   margin-bottom: 15px;
   font-family: 'CartoGothicStdBold';
 }
+h1.light { font-family: 'CartoGothicStdBook'; }
+h1.light b { font-family: 'CartoGothicStdBold'; font-weight: normal; }
  
 h2 {
   font-family: 'CartoGothicStdBook';
   font-size: 24pt;
 }
 h3 {
-  font-weight: bold;
+  font-family: 'CartoGothicStdBold';
+  font-size: 1.2em;
   margin: 1em 0 0.5em;
 }
 
@@ -150,12 +154,17 @@ h3 {
 }
 
 
-/************* theme colors */
+/************* theme colors & styles */
 .light-blue { background-color: #e0e0ef; }
 .rounded-big {
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
+}
+.rounded-small {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 .hw-red { color: #7a0f2e; }
 .hw-blue { color: #085586; }
@@ -187,32 +196,36 @@ h3 {
 
 .left-body {
   float: left;
-  width: 600px;
+  width: 560px;
 }
 .right-sidebar {
   float: right;
-  width: 290px;
-  padding: 15px;
-  overflow: hidden;
+  width: 310px;
 }
+  .right-sidebar .item { padding: 20px; margin-top: 25px; }
+  .right-sidebar .item:first-child { margin-top: 0; }
+    .right-sidebar h3 { text-align: center; }
+    .right-sidebar .item h3:first-child { margin-top: 0; }
+  .right-sidebar li { font-size: 0.9em; line-height: 1.4em; margin-top: 0.7em; }
 
 .screenshot {
   background-color: #fff;
   text-align: center;
   border: 1px solid silver;
+  box-shadow: 0px 0px 8px #999;
 }
 .screenshot img {
-  margin: 5px;
+  margin: 10px;
 }
 
 .quote {
   width: 90%;
-  background-color: #ddd;
+  background-color: #e7e7ee;
   margin: 1.6em auto;
-  padding: 0.8em;
+  padding: 1.2em;
   line-height: 1.5em;
 }
-  .quote .text { font-style: italic; }
+  .quote .text { font-style: italic; font-family: Georgia, serif; }
   .quote .dude { text-align: right; }
  
 /**************** team */

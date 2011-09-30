@@ -3,8 +3,32 @@
 - content_for :study_title do
   Global Green Arts
 
+- content_for :study_sidebar do
+  .item.light-green
+    %h3 Technology Used
+    %ul
+      %li PHP and WordPress
+
 - content_for :study_logo do
   = image_tag 'logo_globalgreen.png'
 
 - content_for :study_body do
-  %p blah blah blah
+  %p
+    When brothers Steven and David Wade launched their art supply company,
+    they needed a site to communicate their vision of sustainable art to
+    the world. As veteran designers, they wanted a web studio that could
+    deliver perfection down to the pixel. Additionally, the site needed to
+    be easily editable to grow and evolve with their company.
+
+  %blockquote.quote.rounded-big
+    .text
+      &#8220;We are so pleased with the work that humanweb did. <b>The site
+      looks fantastic</b> and we're able to edit it easily.&#8221;
+    .dude
+      %b Steven Wade
+      %br
+      Founder, Global Green Arts
+
+  %p
+    Humanweb created a heavily customized WordPress intallation to support
+    the Wade brothers' vision.

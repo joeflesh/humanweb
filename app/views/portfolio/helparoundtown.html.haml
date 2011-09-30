@@ -8,16 +8,27 @@
 
 - content_for :study_sidebar do
   .screenshot= image_tag 'portfolio_hat.png'
-  %h3 Technology Used
+  .light-green.item.rounded-small
+    %h3 Technology Used
+    %ul
+      %li Ruby and Ruby on Rails
+      %li Continuous integration
+      %li AJAX and jQuery
+      %li Amazon Web Services (EC2, EBS)
+      %li Distributed code control with git
+      %li TDD (Test-Driven Development)
+      %li MySQL
+      %li Geolocation with the Google API
+
 
 
 
 - content_for :study_body do
   %p How do you create work in a recession? In May 2010, Reem Yared started hearing the same story from friends: their college kids were back in town for the summer and could not find work. Or the college student would find work, and the high school sibling who had worked at a local store all year, would not get hired. All the typical jobs youths used to rely on seemed to evaporate.
-  %blockquote.quote
+  %blockquote.quote.rounded-big
     .text
-      "Humanweb not only built my vision, they helped me
-      articulate requirements and better understand my audience."
+      &#8220;Humanweb not only built my vision, they helped me
+      articulate requirements and better understand my audience.&#8221;
     .dude
       %b Reem Yared
       %br

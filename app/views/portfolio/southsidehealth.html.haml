@@ -3,11 +3,48 @@
 - content_for :study_title do
   South Side Health
 
-- content_for :study_logo do 
-  = image_tag 'logo_ssh.png'
+- content_for :study_sidebar do
+  .item{:style=>'text-align: center;'}
+    %h3.center In partnership with
+    = image_tag 'logo_urbanhealth.png'
+    %br
+    = image_tag 'logo_healthleads.png'
+
+  -#= image_tag 'logo_ssh.png'
+  .item.light-green
+    %h3 Technology Used
+    %ul
+      %li PHP and CakePHP
+      %li Agile development
+      %li AJAX, Ext, and jQuery
+      %li Weekly user focus groups
+      %li Distributed version control with Mercurial
+      %li Project management with Kiln and FogBugz
+      %li MySQL
+      %li Geolocation with the Google API
 
 - content_for :study_body do
   %p In partnership with
   = image_tag 'logo_urbanhealth.png'
   = image_tag 'logo_healthleads.png'
+
+  %blockquote.quote.rounded-big
+    .text
+      &#8220;Humanweb worked closely with our stakeholders to discover their
+      needs, and then delivered on their promises.&#8221;
+    .dude
+      %b Stephen Brown
+      %br
+      Technology Director, Urban Health Institute
+
+
+  %blockquote.quote.rounded-big
+    .text
+      &#8220;South Side Health improved by leaps and bounds with Humanweb
+      working on it. The improvements allowed us to better serve
+      the under-served.&#8221;
+    .dude
+      %b Sarah Grusin
+      %br
+      Program Manager, HealthLeads
 

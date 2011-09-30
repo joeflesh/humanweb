@@ -10,18 +10,19 @@
     .left-body
       = yield :study_body
 
-    .right-sidebar.light-green.rounded-big
-      = yield :study_logo
+    .right-sidebar
+      -#.rounded-big
       = yield :study_sidebar
-      %h3 More Case Studies
-      %ul
-        - unless request.fullpath == work_helparoundtown_path
-          %li= link_to "Help Around Town", work_helparoundtown_path
-        - unless request.fullpath == work_globalgreenarts_path
-          %li= link_to "Global Green Arts", work_globalgreenarts_path
-        - unless request.fullpath == work_projectevie_path
-          %li= link_to "Project EVIE", work_projectevie_path
-        - unless request.fullpath == work_southsidehealth_path
-          %li= link_to "South Side Health", work_southsidehealth_path
+      .item.light-green.rounded-small
+        %h3 More Case Studies
+        %ul.disc
+          - unless request.fullpath == work_helparoundtown_path
+            %li= link_to "Help Around Town", work_helparoundtown_path
+          - unless request.fullpath == work_globalgreenarts_path
+            %li= link_to "Global Green Arts", work_globalgreenarts_path
+          - unless request.fullpath == work_projectevie_path
+            %li= link_to "Project EVIE", work_projectevie_path
+          - unless request.fullpath == work_southsidehealth_path
+            %li= link_to "South Side Health", work_southsidehealth_path
 
 = render :template => 'layouts/application'
