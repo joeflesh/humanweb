@@ -132,6 +132,7 @@ h3 {
       }
       ul#nav-menu li.active a {
         color: #d71f26;
+        text-shadow: 1px 1px 0px #c70f16;
       }
       ul#nav-menu li a {
         float: left;
@@ -139,6 +140,7 @@ h3 {
         padding-left: 10px;
         border-left: 2px solid #efefef;
         color: #333;
+        text-shadow: 1px 1px 0px #fff;
       }
       ul#nav-menu li a:hover {
         color: #e01f26;
@@ -232,12 +234,6 @@ h3 {
 /**************** team */
 .image.joe { background: url('../images/mugshot_joe.jpg') -80px -60px no-repeat;}
 .image.declan { background: url('../images/mugshot_declan.jpg') -70px -10px no-repeat; }
-
-.person {
-  margin-bottom: 50px;
-  border-bottom: 1px solid #ccc;
-}
-.person:last-child { padding-bottom: 0; border: 0; }
 
 .person h2 { margin-bottom: 10px; }
 
