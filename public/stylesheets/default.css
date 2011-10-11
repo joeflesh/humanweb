@@ -4,7 +4,7 @@
 /* general stuff */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -43,7 +43,7 @@ a:visited {color: #2C3088;}
 a:hover {text-decoration: underline;}
 a img {border: 0}
 p {
-  line-height: 1.4em;
+  line-height: 1.5em;
   margin-bottom: 1.2em;
 }
 p:last-child { margin-bottom: 0; }
@@ -61,11 +61,13 @@ h1 {
   margin-bottom: 15px;
   font-family: 'CartoGothicStdBold';
 }
+h1.fancy { font-family: 'BebasNeueRegular'; font-size: 28pt; margin-bottom: 5px;}
 h1.light { font-family: 'CartoGothicStdBook'; }
 h1.light b { font-family: 'CartoGothicStdBold'; font-weight: normal; }
  
 h2 {
-  font-family: 'CartoGothicStdBook';
+  /*font-family: 'CartoGothicStdBook';*/
+  font-family: 'BebasNeueRegular';
   font-size: 24pt;
 }
 h3 {
@@ -87,7 +89,6 @@ h3 {
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'CartoGothicStdBook';
     src: url('../fonts/CartoGothicStd-Book-webfont.eot');
@@ -98,8 +99,17 @@ h3 {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-
+}
 /******************** logo & top */
 #page-header {
   /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf7f2', endColorstr='#e2deda');
@@ -171,11 +181,10 @@ h3 {
 
 
 /************* theme colors & styles */
-.light-blue { background-color: #e0e0ef; }
 .rounded-big {
-  -moz-border-radius: 16px;
-  -webkit-border-radius: 16px;
-  border-radius: 16px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
 }
 .rounded-small {
   -moz-border-radius: 6px;
@@ -185,7 +194,7 @@ h3 {
 .hw-red { color: #7a0f2e; }
 .hw-blue { color: #085586; }
 .dark-grey { color: #444; }
-.light-grey, a.light-grey { color: #7f7f7f; }
+.light-grey, a.light-grey { color: #8f8f8f; }
 .light-green { background-color: #ddeecc; }
 
 
