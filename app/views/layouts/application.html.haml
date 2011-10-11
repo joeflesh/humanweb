@@ -15,8 +15,7 @@
     #page-header
       .container_12
         .grid_12.alpha{:style=>'position:relative; '}
-          #biglogo
-            .none human<b>web</b>
+          %h1#biglogo humanweb
 
           - @highlight ||= request.fullpath
           %ul#nav-menu
@@ -45,6 +44,6 @@
       #bodyPage.container_12
         = content_for?(:content) ? yield(:content) : yield
 
-    #page-footer
-      .page
-        &copy; #{DateTime.now.year} Human Web Solutions LLC
+      .container_12
+        .grid_12#page-footer.node-right
+          &copy; #{DateTime.now.year} Human Web Solutions LLC

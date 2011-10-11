@@ -1,8 +1,8 @@
 - content_for :content do
  
 
-  .grid_8.alpha
-    .header-node
+  .grid_8
+    .left-node
       %h1.dark-grey.no-bottom-margin
         Case Study:
         = yield :study_title
@@ -13,8 +13,8 @@
 
       = yield :study_body
 
-  .grid_4.right-sidebar.omega
-    .node
+  .grid_4.right-sidebar
+    .right-node
       -#.rounded-big
       = yield :study_sidebar
       .item.light-green.rounded-small

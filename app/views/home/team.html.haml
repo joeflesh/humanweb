@@ -5,21 +5,23 @@
 
   .person
     .grid_5
-      .image-border
+      .left-node
         .image.declan 
     .grid_7.bio
-      %h2 Declan Frye
-      = render 'bio_declan'
+      .right-node
+        %h2 Declan Frye
+        = render 'bio_declan'
 
   .clear
 
 
   .person{:style => 'margin-top: 20px;'}
     .grid_5
-      .image-border
+      .left-node
         .image.joe
     .bio.grid_7
-      %h2 Joseph Flesh
-      = render 'bio_joe'
+      .right-node
+        %h2 Joseph Flesh
+        = render 'bio_joe'
 
   .clear
