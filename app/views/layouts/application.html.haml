@@ -12,38 +12,37 @@
     = javascript_include_tag 'jquery.lettering-0.6.1.min'
 
   %body
-
     #page-header
-      .page
-        #biglogo
-          .none human<b>web</b>
+      .container_12
+        .grid_12.alpha{:style=>'position:relative; '}
+          #biglogo
+            .none human<b>web</b>
 
-        - @highlight ||= request.fullpath
+          - @highlight ||= request.fullpath
+          %ul#nav-menu
+            - if @highlight == root_path
+              %li.active= link_to "WHAT WE DO", root_path
+            - else
+              %li= link_to "WHAT WE DO", root_path
 
-        %ul#nav-menu
-          - if @highlight == root_path
-            %li.active= link_to "WHAT WE DO", root_path
-          - else
-            %li= link_to "WHAT WE DO", root_path
+            - if @highlight == team_path
+              %li.active= link_to "THE TEAM", team_path
+            - else
+              %li= link_to "THE TEAM", team_path
 
-          - if @highlight == team_path
-            %li.active= link_to "THE TEAM", team_path
-          - else
-            %li= link_to "THE TEAM", team_path
+            - if @highlight.start_with?(work_path)
+              %li.active= link_to "OUR WORK", work_path
+            - else
+              %li= link_to "OUR WORK", work_path
 
-          - if @highlight.start_with?(work_path)
-            %li.active= link_to "OUR WORK", work_path
-          - else
-            %li= link_to "OUR WORK", work_path
-
-          - if @highlight == contact_path
-            %li.active= link_to "HIRE US", contact_path
-          - else
-            %li= link_to "HIRE US", contact_path
-    #btm-line
-    
-    #white
-      #bodyContainer.page
+            - if @highlight == contact_path
+              %li.active= link_to "HIRE US", contact_path
+            - else
+              %li= link_to "HIRE US", contact_path
+  
+    -#white
+    #bodyContainer
+      #bodyPage.container_12
         = content_for?(:content) ? yield(:content) : yield
 
     #page-footer

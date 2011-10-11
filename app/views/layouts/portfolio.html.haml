@@ -1,16 +1,20 @@
 - content_for :content do
-  %h1.dark-grey.no-bottom-margin
-    Case Study:
-    = yield :study_title
-  .smaller-font
-    = link_to "< back to portfolio", work_path, :class => 'light-grey'
+ 
 
-  .clearfix{:style=>'margin-top: 1.4em;'}
+  .grid_8.alpha
+    .header-node
+      %h1.dark-grey.no-bottom-margin
+        Case Study:
+        = yield :study_title
+      .smaller-font
+        = link_to "< back to portfolio", work_path, :class => 'light-grey'
 
-    .left-body
+      .clearfix{:style=>'margin-top: 1.4em;'}
+
       = yield :study_body
 
-    .right-sidebar
+  .grid_4.right-sidebar.omega
+    .node
       -#.rounded-big
       = yield :study_sidebar
       .item.light-green.rounded-small
