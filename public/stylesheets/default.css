@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background: transparent url('../images/header-wood.jpg') top center repeat-x;
+  background: #e7e7ea url('../images/header-wood.jpg') top center repeat-x;
   color: #222;
 }
 #bodyContainer {
@@ -30,6 +30,7 @@ body {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   box-shadow: 0px 0px 5px #aaa;
+  padding-bottom: 20px;
 }
 .left-node { margin-top: 12px; margin-left: 10px; }
 .right-node { margin-top: 12px; margin-right: 10px; }
@@ -198,9 +199,6 @@ h3 {
 
 /************ portfolio */
 .project {
-  border-bottom: 1px solid #ccc;  
-  margin-bottom: 40px;
-  padding-bottom: 40px;
 }
   .project .read-more {
     text-align: right;
