@@ -134,12 +134,12 @@ h3 {
   ul#nav-menu {
     list-style-type: none;
     position: absolute;
-    top: 97px;
+    top: 93px;
     padding: 3px 1px;
     border-radius: 12px;
     width: 100%;
     overflow: auto;
-    background: #fff;
+    background: rgba(255,255,255,0.9);
     box-shadow: inset 1px 1px 4px #999;
   }
     ul#nav-menu li {
@@ -148,8 +148,10 @@ h3 {
       font-weight: bold;
       float: left;
     }
-      ul#nav-menu li.active a {
+      ul#nav-menu li.active a, ul#nav-menu li.active a:hover {
         color: #d71f26;
+        background: rgba(255,255,255,1);
+        text-shadow: 0;
       }
       ul#nav-menu li a {
         text-align: center;
@@ -159,13 +161,13 @@ h3 {
         color: #333;
         width: 135px;
         text-shadow: 1px 1px 1px #d7d7d7;
+        border-radius: 12px;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
       }
-      ul#nav-menu li:first-child a { border-radius: 12px 0 0 12px; }
-      ul#nav-menu li:last-child a { border-radius: 0 12px 12px 0;}
       ul#nav-menu li a:hover {
-        /*color: #e01f26;*/
+        text-shadow: 1px 1px 4px #fff;
         text-decoration: none;
-        background: #eee;
       }
 
 /************* footer */
