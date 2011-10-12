@@ -17,10 +17,11 @@
   %body
     #page-header
       .container_12
-        .grid_12.alpha{:style=>'position:relative; '}
+        .grid_4.alpha
           %h1#biglogo humanweb
 
           - @highlight ||= request.fullpath
+        .grid_8{:style=>'position:relative;'}
           %ul#nav-menu
             - if @highlight == root_path
               %li.active= link_to "WHAT WE DO", root_path

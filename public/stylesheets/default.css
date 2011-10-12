@@ -132,19 +132,19 @@ h3 {
 }
 /************ menubar */
   ul#nav-menu {
-    float: right;
     list-style-type: none;
     position: absolute;
-    right: 240px;
-    bottom: 20px;
-    background: #fff;
-    box-shadow: inset 1px 1px 4px #bbb;
+    top: 97px;
     padding: 3px 1px;
     border-radius: 12px;
+    width: 100%;
+    overflow: auto;
+    background: #fff;
+    box-shadow: inset 1px 1px 4px #999;
   }
     ul#nav-menu li {
       display: inline;
-      font-size: 15px;
+      font-size: 17px;
       font-weight: bold;
       float: left;
     }
@@ -152,10 +152,12 @@ h3 {
         color: #d71f26;
       }
       ul#nav-menu li a {
+        text-align: center;
         float: left;
         /*margin-left: 10px;*/
         padding: 0 10px;
         color: #333;
+        width: 135px;
         text-shadow: 1px 1px 1px #d7d7d7;
       }
       ul#nav-menu li:first-child a { border-radius: 12px 0 0 12px; }
@@ -163,7 +165,7 @@ h3 {
       ul#nav-menu li a:hover {
         /*color: #e01f26;*/
         text-decoration: none;
-        background: #f7f7f7;
+        background: #eee;
       }
 
 /************* footer */
