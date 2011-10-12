@@ -3,25 +3,25 @@
 
 .container_12
 
-  .person
-    .grid_5
-      .left-node
-        .image.declan 
-    .grid_7.bio
-      .right-node
+  .grid_12
+    .left-node.right-node.top
+      %h1
+        We are a small tech studio that cares about the details,
+        and can give your project the attention it deserves.
+
+  .clear
+
+  .grid_4.prefix_1.suffix_1
+    .person
+      .image.declan 
+      .bio
         %h2 Declan Frye
         = render 'bio_declan'
 
-  .clear
 
-
-  .person{:style => 'margin-top: 20px;'}
-    .grid_5
-      .left-node
-        .image.joe
-    .bio.grid_7
-      .right-node
+  .grid_4.prefix_1.suffix_1
+    .person
+      .image.joe
+      .bio
         %h2 Joseph Flesh
         = render 'bio_joe'
-
-  .clear

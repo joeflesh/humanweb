@@ -34,6 +34,8 @@ body {
 }
 .left-node { margin-top: 12px; margin-left: 10px; }
 .right-node { margin-top: 12px; margin-right: 10px; }
+.right-node.top { margin-top: 17px; }
+
 .node { margin-top: 12px; }
 a {
   color: #2C3088;
@@ -204,13 +206,20 @@ h3 {
   padding: 24px 0 20px;
 }
 
-/************ portfolio */
-.project {
-  cursor: pointer;
-}
-  .project .read-more {
-    text-align: right;
+/************ case studies page */
+
+
+.project { cursor: pointer; }
+  .project .read-more { text-align: right; }
+  .project .screenshot {
+    display: block;
+    position: relative;
   }
+  .project .screenshot img { border: 1px solid #e6e6e6; margin-bottom: 8px; }
+  .project h2 { margin-bottom: 8px; }
+
+
+/*********** inside portfolio pages */
 
 .smaller-font { font-size: 0.8em; }
 .no-bottom-margin { margin-bottom: 0; }
@@ -222,26 +231,16 @@ h3 {
     .right-sidebar .item h3:first-child { margin-top: 0; }
   .right-sidebar li { line-height: 1.4em; margin-top: 0.7em; }
 
-.screenshot {
-  background-color: #fff;
-  text-align: center;
-  border: 1px solid silver;
-  box-shadow: 0px 3px 6px #ccc;
-}
-.screenshot img {
-  margin: 10px;
-}
 
 .quote {
-  font-size: 1.2em;
   width: 90%;
   background-color: #e7e7ee;
   margin: 1.6em auto;
   padding: 1.2em;
   line-height: 1.5em;
 }
-  .quote .text { font-style: italic; font-family: Georgia, serif; }
-  .quote .dude { text-align: right; }
+  .quote .text { font-style: italic; font-family: Georgia, serif; font-size: 1.3em;}
+  .quote .dude { text-align: right; font-size: 1.2em;}
  
 /**************** team */
 .image.joe { background: url('../images/mugshot_joe.jpg') -80px -60px no-repeat;}
