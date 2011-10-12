@@ -55,18 +55,12 @@ p:last-child { margin-bottom: 0; }
 }
 ul li { line-height: 1.4em; }
 
-
-h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-  font-family: 'CartoGothicStdBold';
-}
+h1 { font-family: 'BebasNeueRegular'; font-size: 32pt; margin-bottom: 7px; }
 h1.fancy { font-family: 'BebasNeueRegular'; font-size: 28pt; margin-bottom: 5px;}
 h1.light { font-family: 'CartoGothicStdBook'; }
 h1.light b { font-family: 'CartoGothicStdBold'; font-weight: normal; }
  
 h2 {
-  /*font-family: 'CartoGothicStdBook';*/
   font-family: 'BebasNeueRegular';
   font-size: 24pt;
 }
@@ -191,7 +185,7 @@ h3 {
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
-.hw-red { color: #7a0f2e; }
+.hw-red { color: #d71f26; }
 .hw-blue { color: #085586; }
 .dark-grey { color: #444; }
 .light-grey, a.light-grey { color: #8f8f8f; }
@@ -208,6 +202,7 @@ h3 {
 
 /************ portfolio */
 .project {
+  cursor: pointer;
 }
   .project .read-more {
     text-align: right;
@@ -216,23 +211,25 @@ h3 {
 .smaller-font { font-size: 0.8em; }
 .no-bottom-margin { margin-bottom: 0; }
 
+.right-sidebar { margin-top: 9px; }
   .right-sidebar .item { padding: 20px; margin-top: 25px; }
   .right-sidebar .item:first-child { margin-top: 0; }
     .right-sidebar h3 { text-align: center; }
     .right-sidebar .item h3:first-child { margin-top: 0; }
-  .right-sidebar li { font-size: 0.9em; line-height: 1.4em; margin-top: 0.7em; }
+  .right-sidebar li { line-height: 1.4em; margin-top: 0.7em; }
 
 .screenshot {
   background-color: #fff;
   text-align: center;
   border: 1px solid silver;
-  box-shadow: 0px 0px 8px #999;
+  box-shadow: 0px 3px 6px #ccc;
 }
 .screenshot img {
   margin: 10px;
 }
 
 .quote {
+  font-size: 1.2em;
   width: 90%;
   background-color: #e7e7ee;
   margin: 1.6em auto;
