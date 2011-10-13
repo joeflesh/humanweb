@@ -4,24 +4,26 @@
 .container_12
 
   .grid_12
-    .left-node.right-node.top
+    .left-node
       %h1
-        We are a small tech studio that cares about the details,
-        and can give your project the attention it deserves.
+        Here we are
+        %span.light-grey | Nice to meet you too!
 
   .clear
 
-  .grid_4.prefix_1.suffix_1
-    .person
-      .image.declan 
-      .bio
-        %h2 Declan Frye
-        = render 'bio_declan'
+  .grid_6
+    .left-node
+      .person
+        .image.declan
+        .bio
+          %h2 Declan Frye
+          = render 'bio_declan'
 
 
-  .grid_4.prefix_1.suffix_1
-    .person
-      .image.joe
-      .bio
-        %h2 Joseph Flesh
-        = render 'bio_joe'
+  .grid_6
+    .right-node
+      .person
+        .image.joe
+        .bio
+          %h2 Joseph Flesh
+          = render 'bio_joe'

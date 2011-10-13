@@ -1,7 +1,10 @@
-.project
+.image-overlay{:style=>'display:none;'}
+  .arrow READ MORE
+
+.project.clearfix
   .grid_8
     .left-node
-      %h1.fancy
+      %h1
         Help Around Town
         %span.light-grey | Featured Case Study
       %p
@@ -24,8 +27,9 @@
 .project.grid_4
   .left-node
     %h2 South Side Health
-    %a.screenshot{:href => work_southsidehealth_path} 
+    %a.screenshot{:href => work_southsidehealth_path}
       = image_tag 'thumb-ssh.jpg'
+
     %p
       The first of its kind, this database of social services is used
       by social workers nationwide to help their clients find employment,
