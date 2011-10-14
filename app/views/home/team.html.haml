@@ -11,19 +11,33 @@
 
   .clear
 
-  .grid_6
-    .left-node
+  .grid_5
+    .left-node{:style=>'margin-right: 20px;'}
+      %h2.sans What do we do?
+      %p
+        We look to develop <strong>long-term relationships with
+        fantastic clients</strong>, bringing our energy and expertise
+        to the table every single day.
+      %p
+        Technology should be a tool to make life more efficient. We
+        love building <strong>unique sites and applications</strong> that harness the
+        internet to provide <strong>cost-effective solutions</strong>.
+      %p
+        We couldn't be more excited to work with you. Contact us to
+        learn more.
+
+  .grid_7
+    .right-node
       .person
         .image.declan
         .bio
-          %h2 Declan Frye
+          %h2.sans Declan Frye
           = render 'bio_declan'
+        
+      .clear
 
-
-  .grid_6
-    .right-node
-      .person
+      .person{:style=>'margin-top: 20px;'}
         .image.joe
         .bio
-          %h2 Joseph Flesh
+          %h2.sans Joseph Flesh
           = render 'bio_joe'
