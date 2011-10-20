@@ -18,7 +18,7 @@ body {
   position: relative;
   /*background: #e2deda; */
   background: #e7e7ea;
-  box-shadow: 0px -4px  6px #222;
+  /*box-shadow: 0px -4px  6px #222;*/
   border-top: 1px solid #f7f7f7;
   padding: 20px 10px 0px;
 }
@@ -41,7 +41,7 @@ a {
   color: #2C3088;
 }
 a:visited {color: #2C3088;}
-a:hover { border-bottom: 1px dotted #2C3088; }
+p a:hover { border-bottom: 1px dotted #2C3088; }
 a img {border: 0}
 p {
   line-height: 1.5em;
@@ -122,6 +122,7 @@ h3 {
   background: url('../images/header-wood.jpg') no-repeat;
   margin: 0 auto;
   padding: 0 10px;
+  box-shadow: inset 0px -4px 4px #222;
   /* border-bottom: 1px solid #fff; */
 }
   #biglogo {
