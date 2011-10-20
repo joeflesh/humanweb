@@ -39,10 +39,9 @@ body {
 .node { margin-top: 12px; }
 a {
   color: #2C3088;
-  text-decoration: none;
 }
 a:visited {color: #2C3088;}
-a:hover {text-decoration: underline;}
+a:hover { border-bottom: 1px dotted #2C3088; }
 a img {border: 0}
 p {
   line-height: 1.5em;
