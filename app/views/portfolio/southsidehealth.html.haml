@@ -4,14 +4,14 @@
   South Side Health
 
 - content_for :study_sidebar do
-  .item{:style=>'text-align: center;'}
+  .item
     %h3.center In partnership with
     = image_tag 'logo_urbanhealth.png'
-    %br
-    = image_tag 'logo_healthleads.png'
+    -#%br
+    -#= image_tag 'logo_healthleads.png'
 
   -#= image_tag 'logo_ssh.png'
-  .item.light-green
+  .item.light-green.rounded-small
     %h3 Technology Used
     %ul
       %li PHP and CakePHP
@@ -24,9 +24,8 @@
       %li Geolocation with the Google API
 
 - content_for :study_body do
-  %p In partnership with
-  = image_tag 'logo_urbanhealth.png'
-  = image_tag 'logo_healthleads.png'
+
+  %p In emergency rooms around the country, doctors routinely prescribe antibiotics to patients who do not have access to adequate food or shelter. This site easily allows doctors, social workers and others to “prescribe” essential health and social services, such as food pantries, employment assistance, and childcare.
 
   %blockquote.quote.rounded-big
     .text
@@ -37,14 +36,22 @@
       %br
       Technology Director, Urban Health Institute
 
+  %p When Humanweb was first approached to develop the site, it was already in widespread use despite major issues with stability and ease-of-use. This pointed towards a deep-seated need for such an application, and only made us more excited to take on the project.
+
+  %p Starting from a visual redesign, Humanweb met with heavy users of the site to discover what they liked, what they didn't, and what they wished they could do. Together we charted out weekly iterations of the site.
 
   %blockquote.quote.rounded-big
     .text
       &#8220;South Side Health improved by leaps and bounds with Humanweb
-      working on it. The improvements allowed us to better serve
+      working on it. Joe &amp; Declan were incredible at figuring out what
+      we needed. The improvements allowed us to better serve
       the under-served.&#8221;
     .dude
       %b Sarah Grusin
       %br
       Program Manager, HealthLeads
+
+  %p South Side Health is now used by hundreds of social workers and volunteers nationwide, helping to provide the essentials to tens of thousands of clients. 
+
+
 

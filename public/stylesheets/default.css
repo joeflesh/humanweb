@@ -55,7 +55,9 @@ p:last-child { margin-bottom: 0; }
   position: absolute;
   left: -9999px;
 }
-ul li { line-height: 1.4em; }
+ul li { line-height: 1.5em; }
+ul.disc, ul.disc li { list-style: disc outside none;}
+ul.disc li {margin-left: 20px; }
 
 h1 { font-family: 'BebasNeueRegular'; font-size: 32pt; margin-bottom: 5px; }
 h1.smooth { font-family: 'CabinRegular'; }
@@ -255,7 +257,7 @@ h3 {
 
 /*********** inside portfolio pages */
 
-.smaller-font { font-size: 0.8em; }
+.smaller-font { font-size: 0.9em; }
 .no-bottom-margin { margin-bottom: 0; }
 
 .right-sidebar { margin-top: 9px; }
