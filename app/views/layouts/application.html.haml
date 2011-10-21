@@ -43,11 +43,10 @@
             - else
               %li= link_to "HIRE US", contact_path
   
-    -#white
-    #bodyContainer
+    #bodyContainer{:style=>'padding-bottom:20px;'}
       #bodyPage.container_12
         = content_for?(:content) ? yield(:content) : yield
 
-      .container_12
-        .grid_12#page-footer.node-right
-          &copy; #{DateTime.now.year} Human Web Solutions LLC
+    .container_12
+      .grid_12#page-footer.node-right
+        &copy; #{DateTime.now.year} Human Web Solutions LLC

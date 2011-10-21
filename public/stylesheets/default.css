@@ -16,11 +16,12 @@ body {
   margin: 0 auto 0;
   display: block;
   position: relative;
-  /*background: #e2deda; */
-  background: #e7e7ea;
-  /*box-shadow: 0px -4px  6px #222;*/
-  border-top: 1px solid #f7f7f7;
+  /*background: #e7e7ea;*/
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #bbb;
   padding: 20px 10px 0px;
+  background: #fff;
+  min-height: 400px;
 }
 #bodyPage {
   width: 960px;
@@ -29,7 +30,7 @@ body {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  box-shadow: 0px 0px 5px #aaa;
+  /*box-shadow: 0px 0px 5px #aaa;*/
   padding-bottom: 20px;
 }
 .left-node { margin-top: 12px; margin-left: 10px; }
@@ -117,15 +118,11 @@ h3 {
 
 /******************** logo & top */
 #page-header {
-  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf7f2', endColorstr='#e2deda');
-  background: -webkit-gradient(linear, left top, left bottom, from(#faf7f2), to(#e2deda));
-  background: -moz-linear-gradient(top,  #faf7f2,  #e2deda); 
-  background-color: #e2deda; */
   background: url('../images/header-wood.jpg') no-repeat;
   margin: 0 auto;
   padding: 0 10px;
   box-shadow: inset 0px -4px 4px #222;
-  /* border-bottom: 1px solid #fff; */
+  border-bottom: 1px solid #ccc;
 }
   #biglogo {
     /*background-image: url('../images/humanweb_logo_med.png');*/
