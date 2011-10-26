@@ -45,7 +45,7 @@ a:visited {color: #2C3088;}
 p a:hover { border-bottom: 1px dotted #2C3088; }
 a img {border: 0}
 p {
-  line-height: 1.5em;
+  line-height: 1.55em;
   margin-bottom: 0.8em;
 }
 p:last-child { margin-bottom: 0; }
