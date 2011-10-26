@@ -117,7 +117,7 @@ h3 {
 
 /******************** logo & top */
 #page-header {
-  background: url('../images/header-wood.jpg') no-repeat;
+  background: url('../images/header-wood.jpg') repeat-x;
   margin: 0 auto;
   padding: 0 10px;
   box-shadow: inset 0px -4px 4px #222;
