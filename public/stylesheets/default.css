@@ -36,8 +36,7 @@ body {
 .left-node { margin-top: 12px; margin-left: 10px; }
 .right-node { margin-top: 12px; margin-right: 10px; }
 .right-node.top { margin-top: 17px; }
-
-.node { margin-top: 12px; }
+.node { padding: 20px; }
 a {
   color: #2C3088;
 }
