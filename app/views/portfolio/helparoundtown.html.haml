@@ -7,7 +7,23 @@
   = image_tag 'logo_hat.png'
 
 - content_for :study_sidebar do
-  .screenshot= image_tag 'portfolio_hat.png'
+  .sidebar-slideshow
+    %ul
+      %li
+        = image_tag 'screenshot-hat4.png'
+      %li
+        = image_tag 'screenshot-hat1.png'
+      %li
+        = image_tag 'screenshot-hat2.png'
+      %li
+        = image_tag 'screenshot-hat3.png'
+  :javascript
+    $('.sidebar-slideshow').easySlider({
+      numeric: true,
+      controlsBefore: '<div class="numeric-slide-controls">',
+      controlsAfter:  '</div>'
+    });
+
   .light-green.item.rounded-small
     %h3 Technology Used
     %ul
