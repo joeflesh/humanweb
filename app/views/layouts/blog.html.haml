@@ -1,0 +1,11 @@
+- content_for :content do
+  %section.blog
+    .content.grid_8
+      = content_for?(:dashboard_content) ? yield(:dashboard_content) : yield
+    %nav.grid_4
+      %h3 Archive
+      %ul
+        - Post.all.each do |post|
+          %li= link_to post.title, post_path(post)
+
+=render :file =>'layouts/application'

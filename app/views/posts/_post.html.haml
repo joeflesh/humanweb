@@ -1,0 +1,5 @@
+%article
+  %h2
+    = post.title
+  .body 
+    = BlueCloth.new(post.body).to_html.html_safe

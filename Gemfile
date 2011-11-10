@@ -6,6 +6,11 @@ gem 'haml'
 
 gem 'sqlite3'
 
+# declarative authorization
+gem 'cancan'
+
+gem 'bluecloth'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

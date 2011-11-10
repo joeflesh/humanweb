@@ -14,4 +14,6 @@ Humanweb::Application.routes.draw do
     get 'work/projectevie' => :projectevie
   end
 
+  resources :posts, :path => 'blog'
+
 end

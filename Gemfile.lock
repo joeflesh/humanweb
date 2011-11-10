@@ -29,7 +29,9 @@ GEM
       activesupport (= 3.0.6)
     activesupport (3.0.6)
     arel (2.0.9)
+    bluecloth (2.2.0)
     builder (2.1.2)
+    cancan (1.6.7)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     haml (3.0.25)
@@ -70,6 +72,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bluecloth
+  cancan
   haml
   rails (= 3.0.6)
   sqlite3
