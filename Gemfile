@@ -5,6 +5,7 @@ gem 'rails', '3.0.6'
 gem 'haml'
 
 gem 'sqlite3'
+gem 'sqlite3-ruby'
 
 # user authentication
 gem 'devise'
