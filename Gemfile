@@ -8,10 +8,15 @@ gem 'sqlite3'
 
 # user authentication
 gem 'devise'
+
 # declarative authorization
 gem 'cancan'
 
+# markdown
 gem 'bluecloth'
+
+# slugs
+gem 'stringex'
 
 # Use unicorn as the web server
 # gem 'unicorn'

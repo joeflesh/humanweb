@@ -1,7 +1,7 @@
 # Blog Posts
 class PostsController < ApplicationController
-    layout 'blog'
-    load_and_authorize_resource  # this is a CanCan method
+  layout 'blog'
+  load_and_authorize_resource :find_by => :url  # this is a Devise method
 
   def create
     save @post

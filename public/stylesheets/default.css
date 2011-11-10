@@ -352,6 +352,13 @@ h3 {
 .blog {
 }
 
+.blog article {
+    margin: 0 0 30px;
+}
+
+.blog time {
+}
+
 .blog .content {
 }
 
