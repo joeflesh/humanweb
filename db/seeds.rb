@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+# admin users.
+[{
+  :email => 'declan@humanwebsolutions.com',
+  :password => 'pizzafactory',
+  :password_confirmation => 'pizzafactory'
+},{
+  :email => 'jflesh@humanwebsolutions.com',
+  :password => 'pizzafactory',
+  :password_confirmation => 'pizzafactory'
+}].each { |user| User.find_or_create_by_email user }

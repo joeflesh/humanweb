@@ -1,5 +1,7 @@
 Humanweb::Application.routes.draw do
 
+  devise_for :users
+
   get "home/index", :as => 'root'
   root :to => 'home#index'
 

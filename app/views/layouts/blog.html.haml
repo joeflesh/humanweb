@@ -6,6 +6,6 @@
       %h3 Archive
       %ul
         - Post.all.each do |post|
-          %li= link_to post.title, post_path(post)
+          %li= link_to post.title, post_path(post), :class => 'text'
 
 =render :file =>'layouts/application'
