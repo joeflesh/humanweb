@@ -1,8 +1,12 @@
+- indexpage ||= false
+
 %article
-  %h2.hw-blue
-    = post.title
-  %time.light-grey
-    %em
-      = post.created_at.strftime('%B %d, %Y')
+  - if indexpage
+    %h2.title
+      = link_to post.title, post_path(post)
+  - else
+    %h2= post.title
+  .time.light-grey
+    = post.created_at.strftime('%B %d, %Y')
   .body 
     = BlueCloth.new(post.body).to_html.html_safe
