@@ -260,7 +260,10 @@ h3 {
   padding: 1.2em;
   line-height: 1.5em;
 }
-  .quote .text { font-style: italic; font-family: Georgia, serif; font-size: 1.3em; line-height: 1.4em;}
+  .quote .text {
+    font-style: italic; font-family: Georgia, serif;
+    font-size: 1.3em; line-height: 1.4em;
+    margin-bottom: 0.8em;}
   .quote .dude { text-align: right; font-size: 1.2em;}
  
 /**************** team */
