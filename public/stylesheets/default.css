@@ -43,7 +43,7 @@ a {
 a:visited {color: #2C3088;}
 p a:hover { border-bottom: 1px dotted #2C3088; }
 a img {border: 0}
-p {
+p, ul {
   line-height: 1.7em;
   margin-bottom: 0.8em;
 }
@@ -55,7 +55,6 @@ p:last-child { margin-bottom: 0; }
   position: absolute;
   left: -9999px;
 }
-ul li { line-height: 1.5em; }
 ul.disc, ul.disc li { list-style: disc outside none;}
 ul.disc li {margin-left: 20px; }
 
@@ -73,7 +72,7 @@ h2.sans {
   font-family: 'Helvetica', 'Arial', sans-serif; 
   font-weight: bold;
   font-size: 18pt;
-  margin-bottom: 2px;
+  margin-bottom: 0.2em;
 }
 h3 {
   font-family: 'CartoGothicStdBold';
