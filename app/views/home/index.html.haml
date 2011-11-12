@@ -7,14 +7,6 @@
 
 .clear{:style=>'height: 25px;'}
 
--# SLIDE SHOW
--#.grid_12.center
-  %ul#front-carousel.jcarousel-skin-tango
-    %li= image_tag 'screen-evie1.png'
-    %li= image_tag 'screen-gga1.png'
-    %li= image_tag 'screen-gga2.png'
--#.clear
-
 .grid_4
   %h2 Who
   %p
@@ -52,10 +44,31 @@
     development</b>, starting from a minimalist design and iteratively
     adding more. Best of all, we have fun doing it.
 
+.clear{:style=>'height: 30px;'}
+.grid_12{:style => 'position: relative;'}
+  #slideshow
+    %ul
+      %li
+        .slide-wrapper
+          .screenshot= image_tag 'screen-evie1.png'
+          .txt
+            %h2.sans Batcakes Fruit Orange
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum risus, congue et tempus sed, placerat at nibh. Aliquam ac diam tortor, ac vulputate metus. In suscipit congue ligula vitae sagittis. Ut sodales condimentum tempor. Suspendisse bibendu
+            %p
+              Curabitur viverra lobortis aliquet. Suspendisse eu elit erat, ut 
+      %li
+        .slide-wrapper= image_tag 'screen-evie1.png'
+      %li
+        .slide-wrapper= image_tag 'screen-gga1.png'
+      %li
+        .slide-wrapper= image_tag 'screen-gga2.png'
+
 :javascript
-  $('#front-carousel').jcarousel({
-    scroll: 1,
-    wrap: 'circular',
-    visible: 1
+  $('#slideshow').easySlider({
+    continuous: true,
+    prevText: '',
+    nextText: ''
+    //numeric: true
   });
 

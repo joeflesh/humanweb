@@ -1,7 +1,5 @@
 /* HumanWeb */
 
-
-/* general stuff */
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 11pt;
@@ -81,8 +79,8 @@ h3 {
 }
 
 
-/* fonts */
-
+/*                    FONTS
+**************************************************/
 @font-face {
     font-family: 'CartoGothicStdBold';
     src: url('../fonts/CartoGothicStd-Bold-webfont.eot');
@@ -114,7 +112,8 @@ h3 {
     font-style: normal;
 }
 
-/******************** logo & top */
+/*                LOGO & HEADER
+***********************************************/
 #page-header {
   margin: 0 auto;
   padding: 0 10px;
@@ -136,7 +135,9 @@ h3 {
   background-color: #fff;
   padding: 40px 0;
 }
-/************ menubar */
+
+/*                  NAV BAR
+***********************************************/
   ul#nav-menu {
     list-style-type: none;
     position: absolute;
@@ -176,7 +177,9 @@ h3 {
         text-decoration: none;
       }
 
-/************* footer */
+/*                 FOOTER
+***********************************************/
+
 #page-footer {
   color: #666;
   padding: 13px 0 10px;
@@ -185,7 +188,8 @@ h3 {
 }
 
 
-/************* theme colors & styles */
+/*        GENERAL COLORS AND STYLES
+***********************************************/
 .rounded-big {
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -202,8 +206,10 @@ h3 {
 .light-grey, a.light-grey { color: #8f8f8f; }
 .light-green { background-color: #ddeecc; }
 
-/************ case studies page */
 
+
+/*                   OUR WORK
+***********************************************/
 
 .project { cursor: pointer; }
   .project .screenshot {
@@ -239,7 +245,8 @@ h3 {
   .project h2 { margin-bottom: 8px; }
 
 
-/*********** inside portfolio pages */
+/*                CASE STUDY
+***********************************************/
 
 .smaller-font { font-size: 0.9em; }
 .no-bottom-margin { margin-bottom: 0; }
@@ -265,7 +272,8 @@ h3 {
     margin-bottom: 0.8em;}
   .quote .dude { text-align: right; font-size: 1.2em;}
  
-/**************** team */
+/*                      TEAM
+**************************************************/
 .image.joe { background: url('../images/mugshot_joe.jpg') no-repeat;}
 .image.declan { background: url('../images/mugshot_declan2.jpg')  no-repeat; }
 
@@ -278,15 +286,64 @@ h3 {
   }
   .person .bio { margin-left: 130px; }
 
-/********** carousel *******/
-.jcarousel-list li img {
-  width: 600px;
-  height: 400px;
-}
-.jcarousel-item {
-  border: 1px solid #ccc;
-  padding: 15px;
-  box-shadow: 0px 0px 6px rgba(0,0,0, 0.3);
+
+/*                  SLIDE SHOW
+**************************************************/
+
+/* forward and back buttons */
+#prevBtn, #nextBtn {
+  height: 37px; width: 37px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 135px;
 }
 
+#prevBtn a, #nextBtn a { height: 37px; width: 37px; display: block;}
+#prevBtn {
+  background-image: url('../images/btn-prev.gif');
+  left: 0;
+}
+#nextBtn {
+  background-image: url('../images/btn-next.gif');
+  right: 0;
+}
+#prevBtn:hover, #nextBtn:hover { background-position: 0 37px; }
+  
+
+/* size and position of slides */
+#slideshow { margin: 0 auto; }
+#slideshow ul li {
+  width: 850px;
+  height: 300px;
+  overflow: hidden;
+}
+.slide-wrapper {
+  margin: 0 auto;
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+  /* slide content */
+  .slide-wrapper .screenshot {
+  }
+    .slide-wrapper .screenshot img {
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+      height: 250px;
+      width: 330px;
+      padding: 10px;
+      box-shadow: 0px 0px 14px #999;
+    }
+  .slide-wrapper .txt {
+    float: left;
+    margin-left: 60px;
+    width: 380px;
+  }
+  .slide-wrapper h2 {
+
+  }
 
