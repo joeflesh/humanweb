@@ -44,31 +44,4 @@
     development</b>, starting from a minimalist design and iteratively
     adding more. Best of all, we have fun doing it.
 
-.clear{:style=>'height: 30px;'}
-.grid_12{:style => 'position: relative;'}
-  #frontpage-slideshow
-    %ul
-      %li
-        .slide-wrapper
-          .screenshot= image_tag 'screen-evie1.png'
-          .txt
-            %h2.sans Batcakes Fruit Orange
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum risus, congue et tempus sed, placerat at nibh. Aliquam ac diam tortor, ac vulputate metus. In suscipit congue ligula vitae sagittis. Ut sodales condimentum tempor. Suspendisse bibendu
-            %p
-              Curabitur viverra lobortis aliquet. Suspendisse eu elit erat, ut 
-      %li
-        .slide-wrapper= image_tag 'screen-evie1.png'
-      %li
-        .slide-wrapper= image_tag 'screen-gga1.png'
-      %li
-        .slide-wrapper= image_tag 'screen-gga2.png'
-
-:javascript
-  $('#slideshow').easySlider({
-    continuous: true,
-    prevText: '',
-    nextText: ''
-    //numeric: true
-  });
 
