@@ -4,20 +4,21 @@
   South Side Health
 
 - content_for :study_sidebar do
-  .item.light-green.rounded-small
-    .sidebar-slideshow
-      %ul
-        %li
-          = image_tag 'screenshot-ssh1.png'
-        %li
-          = image_tag 'screenshot-ssh2.png'
-        %li
-          = image_tag 'screenshot-ssh3.png'
-        %li
-          = image_tag 'screenshot-ssh4.png'
+  .sidebar-slideshow
+    %ul
+      %li
+        = image_tag 'screenshot-ssh1.png'
+      %li
+        = image_tag 'screenshot-ssh2.png'
+      %li
+        = image_tag 'screenshot-ssh3.png'
+      %li
+        = image_tag 'screenshot-ssh4.png'
     :javascript
       $('.sidebar-slideshow').easySlider({
-        numeric: true
+        numeric: true,
+        controlsBefore: '<div class="sidebar-slide-controls">',
+        controlsAfter:  '</div>'
       });
 
   .item
@@ -68,7 +69,9 @@
   %h2.sans What we did
   %p
     We spent the first few weeks updating the look of the site and fixing
-    bugs and usability issues. Then, Humanweb met with heavy users of the site
+    bugs and usability issues. Then,
+    = render 'shared/humanweb'
+    met with heavy users of the site
     to discover what they liked, what they didn't, and what they wished they
     could do.
     Through weekly meetings with users, we invested them in the development
