@@ -16,6 +16,20 @@
       %li MailChimp for huge mailings
 
 - content_for :study_body do
+  .slideshow
+    %ul
+      %li
+        = image_tag 'screenshot-evie1.jpg'
+      %li
+        = image_tag 'screenshot-evie2.jpg'
+      %li
+        = image_tag 'screenshot-evie3.jpg'
+
+  :javascript
+    $('.slideshow').easySlider({
+    });
+
+
   %h2.sans What they needed
   %p
     

@@ -4,6 +4,22 @@
   South Side Health
 
 - content_for :study_sidebar do
+  .item.light-green.rounded-small
+    .sidebar-slideshow
+      %ul
+        %li
+          = image_tag 'screenshot-ssh1.png'
+        %li
+          = image_tag 'screenshot-ssh2.png'
+        %li
+          = image_tag 'screenshot-ssh3.png'
+        %li
+          = image_tag 'screenshot-ssh4.png'
+    :javascript
+      $('.sidebar-slideshow').easySlider({
+        numeric: true
+      });
+
   .item
     %h3.center In partnership with
     = image_tag 'logo_urbanhealth.png'
@@ -77,29 +93,3 @@
     room visits, and social workers help more people find the essentials that
     they need.
     
-    
-  -#%blockquote.quote.rounded-big
-    .text
-      &#8220;Humanweb worked closely with our stakeholders to discover their
-      needs, and then delivered on their promises.&#8221;
-    .dude
-      %b Stephen Brown
-      %br
-      Technology Director, Urban Health Institute
-
-
-
-  -#%blockquote.quote.rounded-big
-    .text
-      &#8220;South Side Health improved by leaps and bounds with Humanweb
-      working on it. Joe &amp; Declan were incredible at figuring out what
-      we needed. The improvements allowed us to better serve
-      the under-served.&#8221;
-    .dude
-      %b Sarah Grusin
-      %br
-      Program Manager, HealthLeads
-
-
-
-

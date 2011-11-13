@@ -312,8 +312,8 @@ h3 {
   
 
 /* size and position of slides */
-#slideshow { margin: 0 auto; }
-#slideshow ul li {
+#frontpage-slideshow { margin: 0 auto; }
+#frontpage-slideshow ul li {
   width: 850px;
   height: 300px;
   overflow: hidden;
@@ -324,6 +324,14 @@ h3 {
   height: 300px;
   overflow: hidden;
   position: relative;
+}
+
+/* size for sidebar slideshows */
+.sidebar-slideshow { margin: 0 auto; }
+.sidebar-slideshow ul li {
+  width: 260px;
+  height: 220px;
+  overflow: hidden;
 }
 
   /* slide content */
