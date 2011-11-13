@@ -39,7 +39,7 @@ a {
   color: #2C3088;
 }
 a:visited {color: #2C3088;}
-p a:hover { border-bottom: 1px dotted #2C3088; }
+p a:hover, a.text:hover { border-bottom: 1px dotted #2C3088; }
 a img {border: 0}
 p, ul {
   line-height: 1.7em;

@@ -46,6 +46,11 @@
   
     #bodyContainer{:style=>'padding-bottom:20px;'}
       #bodyPage.container_12
+        - if notice
+          .notice= notice
+        -if alert
+          .notice.alert= alert
+
         = content_for?(:content) ? yield(:content) : yield
 
     .container_12

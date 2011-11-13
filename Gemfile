@@ -6,6 +6,8 @@ gem 'haml'
 
 gem 'sqlite3'
 
+# user authentication
+gem 'devise'
 # declarative authorization
 gem 'cancan'
 

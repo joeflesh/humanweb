@@ -1,7 +1,7 @@
 # Blog Posts
 class PostsController < ApplicationController
     layout 'blog'
-    load_resource  # this is a CanCan method
+    load_and_authorize_resource  # this is a CanCan method
 
   def create
     save @post
