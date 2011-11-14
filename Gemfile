@@ -19,6 +19,9 @@ gem 'bluecloth'
 # slugs
 gem 'stringex'
 
+# email
+gem 'postmark-rails'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -49,6 +49,11 @@ GEM
     mime-types (1.16)
     orm_adapter (0.0.5)
     polyglot (0.3.1)
+    postmark (0.9.6)
+    postmark-rails (0.4.1)
+      actionmailer
+      postmark (>= 0.9.0)
+      rake
     rack (1.2.2)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
@@ -87,6 +92,7 @@ DEPENDENCIES
   cancan
   devise
   haml
+  postmark-rails
   rails (= 3.0.6)
   sqlite3
   sqlite3-ruby
