@@ -39,6 +39,11 @@
             - else
               %li= link_to "OUR WORK", work_path
 
+            - if @highlight.start_with?(posts_path)
+              %li.active= link_to "BLOG", posts_path
+            - else
+              %li= link_to "BLOG", posts_path
+
             - if @highlight == contact_path
               %li.active= link_to "HIRE US", contact_path
             - else
