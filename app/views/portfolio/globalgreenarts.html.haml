@@ -18,15 +18,14 @@
   .body-slideshow
     %ul
       %li
-        = image_tag 'screenshot-gga4.jpg'
-      %li
         = image_tag 'screenshot-gga2.jpg'
       %li
-        = image_tag 'screenshot-gga1.jpg'
+        = image_tag 'screenshot-gga4.jpg'
       %li
         = image_tag 'screenshot-gga3.jpg'
 
   :javascript
+    $('.body-slideshow ul li').css('height', '390px');
     $('.body-slideshow').easySlider({
       numeric: true,
       controlsBefore: '<div class="numeric-slide-controls">',
