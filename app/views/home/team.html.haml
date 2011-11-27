@@ -4,40 +4,51 @@
 .container_12
 
   .grid_12
-    .left-node
-      %h1
-        Here we are
-        %span.light-grey | Nice to meet you too!
+    %h1
+      Here we are
+      %span.light-grey | Nice to meet you too!
 
   .clear
 
-  .grid_5
-    .left-node{:style=>'margin-right: 20px;'}
-      %h2.sans What do we do?
+  .grid_7
+    .person
+      -#.image.joe
+      -#.bio
+      %h2.sans Joseph Flesh
       %p
-        We look to develop <strong>long-term relationships with
+        Joe enjoys wearing many hats,
+        from <strong>UX design</strong> to keeping books
+        and being the <strong>main point of contact</strong> for clients. 
+        Prior to humanweb, Joe researched simulation technologies at a
+        Department of Energy laboratory, worked in corporate IT, and had a stint
+        as a journalist. He enjoys brewing beer, <strong>world travel</strong>, and
+        breakfast.
+
+    .person{:style=>'margin-top:20px;'}
+      -#.image.declan
+      -#.bio
+      %h2.sans Declan Frye
+      %p
+        Declan is an exceptionally clear thinker, and often distills
+        his thoughts into beautiful application specs.
+        He's responsible for the
+        heavy lifting in <strong>application architecture</strong>. A Manhattan native, he loves the
+        weather and sailing in the Bay Area. He owns a <strong>wooden sailboat</strong>
+        and studies Brazilian jujitsu.
+
+
+  .grid_5
+    .node.light-green.rounded-small
+      %p
+        We develop <strong>long-term relationships with
         fantastic clients</strong>, bringing our energy and expertise
         to the table every single day.
       %p
-        Technology should be a tool to make life more efficient. We
-        love building <strong>unique sites and applications</strong> that harness the
-        internet to provide <strong>cost-effective solutions</strong>.
-      %p
-        We couldn't be more excited to work with you. Contact us to
-        learn more.
-
-  .grid_7
-    .right-node
-      .person
-        .image.declan
-        .bio
-          %h2.sans Declan Frye
-          = render 'bio_declan'
+        Technology should make life more efficient. We
+        harness the internet to solve your problems.
         
-      .clear
+      %p
+        %strong= link_to 'Contact us', contact_path
+        to learn more.
 
-      .person{:style=>'margin-top: 20px;'}
-        .image.joe
-        .bio
-          %h2.sans Joseph Flesh
-          = render 'bio_joe'
+ 

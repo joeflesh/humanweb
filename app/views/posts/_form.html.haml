@@ -1,0 +1,9 @@
+- form_for @post do |f|
+  .row
+    = f.label :title
+    = f.text_field :title, :style => 'width: 100%;'
+  .row
+    = f.label :body
+    = f.text_area :body, :style => 'width: 100%;', :rows => '30'
+  .row
+    = f.submit

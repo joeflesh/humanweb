@@ -4,6 +4,7 @@
     %title
       humanweb -
       = yield :title
+    <link rel="shortcut icon" href="/favicon.gif" />
     = stylesheet_link_tag 'reset'
     = stylesheet_link_tag '960'
     = stylesheet_link_tag 'default'
@@ -11,13 +12,13 @@
 
     = javascript_include_tag 'jquery-1.6.4.min'
     = javascript_include_tag 'jquery-ui-1.8.16.custom.min'
-    = javascript_include_tag 'jquery.lettering-0.6.1.min'
+    = javascript_include_tag 'easySlider1.7'
     = javascript_include_tag 'humanweb'
 
   %body
     #page-header
       .container_12
-        .grid_4.alpha
+        .grid_4
           %h1#biglogo humanweb
 
           - @highlight ||= request.fullpath
@@ -38,16 +39,25 @@
             - else
               %li= link_to "OUR WORK", work_path
 
+            -# if @highlight.start_with?(posts_path)
+              %li.active= link_to "BLOG", posts_path
+            - else
+              %li= link_to "BLOG", posts_path
+
             - if @highlight == contact_path
               %li.active= link_to "HIRE US", contact_path
             - else
               %li= link_to "HIRE US", contact_path
   
-    -#white
-    #bodyContainer
+    #bodyContainer{:style=>'padding-bottom:20px;'}
       #bodyPage.container_12
+        - if notice
+          .notice= notice
+        -if alert
+          .notice.alert= alert
+
         = content_for?(:content) ? yield(:content) : yield
 
-      .container_12
-        .grid_12#page-footer.node-right
-          &copy; #{DateTime.now.year} Human Web Solutions LLC
+    .container_12
+      .grid_12#page-footer.node-right
+        &copy; #{DateTime.now.year} Human Web Solutions LLC

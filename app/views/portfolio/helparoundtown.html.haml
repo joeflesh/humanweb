@@ -7,7 +7,6 @@
   = image_tag 'logo_hat.png'
 
 - content_for :study_sidebar do
-  .screenshot= image_tag 'portfolio_hat.png'
   .light-green.item.rounded-small
     %h3 Technology Used
     %ul
@@ -24,17 +23,67 @@
 
 
 - content_for :study_body do
-  %p How do you create work in a recession? In May 2010, Reem Yared started hearing the same story from friends: their college kids were back in town for the summer and could not find work. Or the college student would find work, and the high school sibling who had worked at a local store all year, would not get hired. All the typical jobs youths used to rely on seemed to evaporate.
+  .body-slideshow{:style=>'height: 400px;'}
+    %ul
+      %li
+        = image_tag 'screenshot-hat1.png'
+      %li
+        = image_tag 'screenshot-hat2.png'
+      %li
+        = image_tag 'screenshot-hat3.png'
+  :javascript 
+    $('.body-slideshow ul li').css('height', '447px');
+    $('.body-slideshow').easySlider({
+      numeric: true,
+      controlsBefore: '<div class="numeric-slide-controls">',
+      controlsAfter:  '</div>'
+    });
+
+
+  %p{:style=>'margin-top: 20px;'}
+    How do you create work in a recession? In May 2010, Reem Yared 
+    started hearing the same story from friends: their college kids
+    were back in town for the summer and could not find work. She decided
+    to create job markets where there were none before.
+
+  %h2.sans What they needed
+  %p
+    The Help Around Town team approached
+    = render('shared/humanweb')
+    looking for a full stack of
+    design and development services to bootstrap their startup. They needed
+    an out-of-the-box team that could investigate their requirements and
+    deliver a product.
+
   %blockquote.quote.rounded-big
     .text
-      &#8220;Humanweb not only built my vision, they helped me
-      articulate requirements and better understand my audience.&#8221;
+      &#8220;Humanweb helped us
+      articulate our vision and better understand our audience.&#8221;
     .dude
       %b Reem Yared
       %br
       CEO, Help Around Town
 
-  %p Articles and stats told the same story: teens and young adults were facing the worse job market since 1942. Their age segment had the highest rate of unemployment since the Great Depression. This can have grave consequences, as summer jobs are the source of savings for the college year. Not being able to work in the summer could sometimes make the difference between being able to attend college or not.
-  %p So, kids unable to work might also be unable to pursue their education. This would leave them both without experience and without education - a dismal outlook for future job prospects.
-  %p As I thought about where one could generate work, I realized we all have a to-do list. Things we should do around the house or yard, need a little help with, but don't know who to turn to. Projects that don't require a professional, but that are too big for one person. What if we could match the need with the service provider? What were the barriers? Trust - Knowledge - Access. If we could surmount these, then we could facilitate cash-generating opportunities in communities across the US - and beyond. Connect people in their neighborhoods, so they could help each other out. 
-  = image_tag 'logo_hat.png'
+  %h2.sans What we did
+  %p
+    After building prototypes of the site we went forward with development.
+    A major concern throughout was to keep the site as open as
+    possible while still maintaining strict privacy and parental controls for
+    users under the age of 18. We coordinated the launch of the website
+    with a local marketing campaign.
+
+  %p{:style=>'margin-bottom:0'}
+    Features of the site include:
+  %ul.disc
+    %li weekly job bulletins tailored to a user's interests
+    %li a payment system for posting advertisements
+    %li administrative functions that give an overview of site activity
+    %li an application process for jobs that protects the privacy of both parties
+
+  %h2.sans The results
+  %p
+    The site provides the groundwork for Help Around Town to grow their
+    business over the next year.
+    = render('shared/humanweb')
+    continues to provide advice and support.
+

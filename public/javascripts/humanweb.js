@@ -7,6 +7,14 @@ var humanweb = humanweb = window.humanweb = {};
 // Stuff do do upon document.ready
 humanweb.init = function() {
 
+  // Mouseover for nav bar
+  $('#nav-menu li:not(.active) a').hover(function(){
+    $(this).animate({ 'color' : '#d71f26' }, 200);
+  }, function(){
+    $(this).animate({ 'color' : '#333333' }, 200);
+  });
+
+  // "Read more" overlay for case study summary mouseover 
   $('.project .screenshot').append($('.image-overlay').clone(true));
 
   // In case study summaries, highlight stuff smoothly on mouseover

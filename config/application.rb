@@ -38,5 +38,14 @@ module Humanweb
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # setup postmark
+    config.action_mailer.delivery_method = :postmark
+    config.action_mailer.postmark_settings = { :api_key => '9cc14850-5de7-42a1-a8ed-06052a164e17' }
+
+    # mailer defaults
+    config.action_mailer.default_url_options = {
+      :host => 'humanweb.co'
+    }
   end
 end

@@ -1,0 +1,19 @@
+- content_for :content do
+  %section.blog
+
+    .content.grid_8
+      = content_for?(:blog_content) ? yield(:blog_content) : yield
+
+    %nav.grid_4.right-sidebar
+      .item.light-green.rounded-small
+        %h3 Archive
+        %ul
+          - Post.all.each do |post|
+            %li= link_to post.title, post_path(post), :class => 'text'
+
+      .item.light-green.rounded-small
+        %h3 Case Studies
+        = render 'shared/casestudies'
+
+
+=render :file =>'layouts/application'

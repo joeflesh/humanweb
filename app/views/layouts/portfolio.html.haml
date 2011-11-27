@@ -2,31 +2,21 @@
  
 
   .grid_8
-    .left-node
-      %h1.dark-grey.no-bottom-margin
-        = yield :study_title
-        %span.light-grey | Case Study
-      .smaller-font
-        = link_to "< back to portfolio", work_path, :class => 'light-grey'
+    %h1.dark-grey.no-bottom-margin
+      = yield :study_title
+      %span.light-grey | Case Study
+    %div
+      = link_to "< back to portfolio", work_path, :class => 'light-grey'
 
-      .clearfix{:style=>'margin-top: 1.4em;'}
+    .clearfix{:style=>'margin-top: 1.4em;'}
 
-      = yield :study_body
+    = yield :study_body
 
   .grid_4.right-sidebar
-    .right-node
-      -#.rounded-big
-      = yield :study_sidebar
-      .item.light-green.rounded-small
-        %h3 More Case Studies
-        %ul.disc
-          - unless request.fullpath == work_helparoundtown_path
-            %li= link_to "Help Around Town", work_helparoundtown_path
-          - unless request.fullpath == work_globalgreenarts_path
-            %li= link_to "Global Green Arts", work_globalgreenarts_path
-          - unless request.fullpath == work_projectevie_path
-            %li= link_to "Project EVIE", work_projectevie_path
-          - unless request.fullpath == work_southsidehealth_path
-            %li= link_to "South Side Health", work_southsidehealth_path
+    -#.rounded-big
+    = yield :study_sidebar
+    .item.light-green.rounded-small
+      %h3 More Case Studies
+      = render 'shared/casestudies' 
 
 = render :template => 'layouts/application'

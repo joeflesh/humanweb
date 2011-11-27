@@ -1,5 +1,7 @@
 Humanweb::Application.routes.draw do
 
+  devise_for :users
+
   get "home/index", :as => 'root'
   root :to => 'home#index'
 
@@ -13,5 +15,7 @@ Humanweb::Application.routes.draw do
     get 'work/globalgreenarts' => :globalgreenarts
     get 'work/projectevie' => :projectevie
   end
+
+  resources :posts, :path => 'blog'
 
 end

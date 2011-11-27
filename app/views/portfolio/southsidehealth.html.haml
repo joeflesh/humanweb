@@ -4,14 +4,31 @@
   South Side Health
 
 - content_for :study_sidebar do
-  .item{:style=>'text-align: center;'}
+  -#.sidebar-slideshow
+    %ul
+      %li
+        = image_tag 'screenshot-ssh2.png'
+      %li
+        = image_tag 'screenshot-ssh1.png'
+      %li
+        = image_tag 'screenshot-ssh3.png'
+      %li
+        = image_tag 'screenshot-ssh4.png'
+    :javascript
+      $('.sidebar-slideshow').easySlider({
+        numeric: true,
+        controlsBefore: '<div class="numeric-slide-controls">',
+        controlsAfter:  '</div>'
+      });
+
+  .item
     %h3.center In partnership with
     = image_tag 'logo_urbanhealth.png'
-    %br
-    = image_tag 'logo_healthleads.png'
+    -#%br
+    -#= image_tag 'logo_healthleads.png'
 
   -#= image_tag 'logo_ssh.png'
-  .item.light-green
+  .item.light-green.rounded-small
     %h3 Technology Used
     %ul
       %li PHP and CakePHP
@@ -24,27 +41,64 @@
       %li Geolocation with the Google API
 
 - content_for :study_body do
-  %p In partnership with
-  = image_tag 'logo_urbanhealth.png'
-  = image_tag 'logo_healthleads.png'
+
+  %p
+    In emergency rooms around the country, doctors routinely prescribe
+    antibiotics to patients who do not have access to adequate food or shelter.
+    This site easily allows doctors, social workers and others to “prescribe”
+    essential health and social services, such as food pantries, employment
+    assistance, and childcare.
+
+  %h2.sans What they needed
+  %p
+    When
+    =render('shared/humanweb')
+    was first approached to develop the site, it was already in
+    widespread use despite major issues with stability and user interface. This
+    pointed towards a deep-seated need for such an application, and only made
+    us more excited to take on the project.
 
   %blockquote.quote.rounded-big
     .text
-      &#8220;Humanweb worked closely with our stakeholders to discover their
-      needs, and then delivered on their promises.&#8221;
+      &#8220;I was impressed by their personable handling of large focus groups
+      and their ability to draw out subtleties in user motivation. Subsequently they
+      translated those subtleties into good design. Though the underlying
+      technology is complicated, the user design is simple and inviting.&#8221;
+
+
+  %h2.sans What we did
+  %p
+    We spent the first few weeks updating the look of the site and fixing
+    bugs and usability issues. Then,
+    = render 'shared/humanweb'
+    met with heavy users of the site
+    to discover what they liked, what they didn't, and what they wished they
+    could do.
+    Through weekly meetings with users, we invested them in the development
+    process and were able to get immediate feedback from the people to whom
+    the site mattered most.
+
+  %blockquote.quote.rounded-big
+    .text
+      &#8220;They took a previous contractor's design and re-architected it so the
+      site would scale, all the while keeping the site operational for the
+      500+ users who depend on it.&#8221;
     .dude
       %b Stephen Brown
       %br
-      Technology Director, Urban Health Institute
+      Directory of Technology Projects, Urban Health Institute
 
+  %h2.sans The results
+  %p
+    South Side Health is now used by social workers and others to serve
+    tens of thousands of clients. By centralizing information about services
+    available in an area, hospitals reduce unnecessary emergency
+    room visits, and social workers help more people find the essentials that
+    they need.
 
-  %blockquote.quote.rounded-big
-    .text
-      &#8220;South Side Health improved by leaps and bounds with Humanweb
-      working on it. The improvements allowed us to better serve
-      the under-served.&#8221;
-    .dude
-      %b Sarah Grusin
-      %br
-      Program Manager, HealthLeads
-
+  %p.light-grey
+    The South Side Health application is open source, licensed under the
+    Apache 2.0 license. It is available in a Mercurial
+    <a href="http://bitbucket.org/southsidehealth/southsidehealth">repository</a> hosted
+    on Bitbucket.
+    

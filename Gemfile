@@ -5,6 +5,22 @@ gem 'rails', '3.0.6'
 gem 'haml'
 
 gem 'sqlite3'
+gem 'sqlite3-ruby'
+
+# user authentication
+gem 'devise'
+
+# declarative authorization
+gem 'cancan'
+
+# markdown
+gem 'bluecloth'
+
+# slugs
+gem 'stringex'
+
+# email
+gem 'postmark-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
