@@ -7,23 +7,6 @@
   = image_tag 'logo_hat.png'
 
 - content_for :study_sidebar do
-  .sidebar-slideshow
-    %ul
-      %li
-        = image_tag 'screenshot-hat4.png'
-      %li
-        = image_tag 'screenshot-hat1.png'
-      %li
-        = image_tag 'screenshot-hat2.png'
-      %li
-        = image_tag 'screenshot-hat3.png'
-  :javascript
-    $('.sidebar-slideshow').easySlider({
-      numeric: true,
-      controlsBefore: '<div class="numeric-slide-controls">',
-      controlsAfter:  '</div>'
-    });
-
   .light-green.item.rounded-small
     %h3 Technology Used
     %ul
@@ -40,8 +23,24 @@
 
 
 - content_for :study_body do
+  .body-slideshow{:style=>'height: 400px;'}
+    %ul
+      %li
+        = image_tag 'screenshot-hat1.png'
+      %li
+        = image_tag 'screenshot-hat2.png'
+      %li
+        = image_tag 'screenshot-hat3.png'
+  :javascript 
+    $('.body-slideshow ul li').css('height', '447px');
+    $('.body-slideshow').easySlider({
+      numeric: true,
+      controlsBefore: '<div class="numeric-slide-controls">',
+      controlsAfter:  '</div>'
+    });
 
-  %p
+
+  %p{:style=>'margin-top: 20px;'}
     How do you create work in a recession? In May 2010, Reem Yared 
     started hearing the same story from friends: their college kids
     were back in town for the summer and could not find work. She decided

@@ -66,7 +66,7 @@ h2 {
   font-family: 'BebasNeueRegular';
   font-size: 24pt;
 }
-h2.sans {
+h2.sans, .blog article h2 {
   font-family: 'Helvetica', 'Arial', sans-serif; 
   font-weight: bold;
   font-size: 18pt;
@@ -77,6 +77,7 @@ h3 {
   font-size: 1.2em;
   margin: 1em 0 0.5em;
 }
+.row { padding: 5px 0; }
 
 
 /*                    FONTS
@@ -163,9 +164,14 @@ h3 {
       ul#nav-menu li a {
         text-align: center;
         float: left;
-        padding: 0 21px 0 20px;
         color: #333;
-        /*width: 125px; */
+        /* with blog link:
+        padding: 0 21px 0 20px;
+        /***/
+        /* without blog link: */
+        width: 135px;
+        padding: 0 10px;
+        /***/
         text-shadow: 1px 1px 1px #d7d7d7;
         border-radius: 12px;
         -moz-border-radius: 12px;
@@ -382,7 +388,11 @@ h3 {
 .blog article {
     margin: 0 0 30px;
 }
-  .blog article h2.title a {
+
+  .blog article h1 {
+    margin-bottom: 0px;
+  }
+  .blog article h1.title a {
     color: #000;
     -webkit-transition: all .17s ease-in-out;
 	-moz-transition: all .17s ease-in-out;
@@ -390,15 +400,23 @@ h3 {
 	-ms-transition: all .17s ease-in-out;
 	transition: all .17s ease-in-out;
   }
-  .blog article h2.title a:hover { color: #d71f26; }
+  .blog article h1.title a:hover { color: #d71f26; }
 
-.blog .time {
+  .blog .time {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .blog article .body {
+    
+  }
+
+  /* see rule:
+  h2.sans, .blog article h2 {}
+  on line 69 */
+
+/********** edit post ********/
+form.edit_post label {
   font-weight: bold;
-  margin-bottom: 0.3em;
-}
-
-.blog .content {
-}
-
-.blog nav {
+  color: #999;
 }
