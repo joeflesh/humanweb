@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   load_and_authorize_resource :find_by => :url  # this is a Devise method
 
   def create
+    @post.author = current_user
     save @post
   end
 

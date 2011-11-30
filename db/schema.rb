@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111110181231) do
+ActiveRecord::Schema.define(:version => 20111130104116) do
 
   create_table "posts", :force => true do |t|
     t.datetime "created_at"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(:version => 20111110181231) do
     t.string   "title"
     t.text     "body"
     t.string   "url"
+    t.integer  "author_id"
+    t.boolean  "tech"
   end
 
   add_index "posts", ["url"], :name => "index_posts_on_url"
