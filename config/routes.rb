@@ -18,4 +18,7 @@ Humanweb::Application.routes.draw do
 
   resources :posts, :path => 'blog'
 
+  # For EC2 profiling research
+  resources :benchmark_results
+
 end
