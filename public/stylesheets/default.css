@@ -165,10 +165,10 @@ h3 {
         text-align: center;
         float: left;
         color: #333;
-        /* with blog link:
+        /* with blog link: */
         padding: 0 21px 0 20px;
         /***/
-        /* without blog link: */
+        /* without blog link:
         width: 135px;
         padding: 0 10px;
         /***/
