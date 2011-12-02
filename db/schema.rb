@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(:version => 20111127040934) do
     t.string   "title"
     t.text     "body"
     t.string   "url"
+    t.integer  "author_id"
+    t.boolean  "tech"
   end
 
   add_index "posts", ["url"], :name => "index_posts_on_url"
