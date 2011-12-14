@@ -23,6 +23,22 @@
 
 
 - content_for :study_body do
+  %blockquote.quote.rounded-big{:style=>'margin-top: 0;'}
+    .text
+      &#8220;Humanweb built the www.helparoundtown.com website from requirements
+      to finished product, from database to GUI.
+      This was a partnership, where Humanweb gave me not just deliverables, but
+      feedback, advice and opinions on how to create a better site. They functioned
+      as full-fledged team members and I must say, now that the project is delivered,
+      I miss their input. Their commitment to the project, their personal investment
+      in seeing it succeed, and the simple pleasure of working with smart, dedicated,
+      energized developers, made the process of building a complex website a pleasure.
+      I recommend them highly.&#8221;
+    .dude
+      %b Reem Yared
+      %br
+      CEO, Help Around Town
+
   .body-slideshow{:style=>'height: 400px;'}
     %ul
       %li
@@ -39,7 +55,6 @@
       controlsAfter:  '</div>'
     });
 
-
   %p{:style=>'margin-top: 20px;'}
     How do you create work in a recession? In May 2010, Reem Yared 
     started hearing the same story from friends: their college kids
@@ -55,14 +70,6 @@
     an out-of-the-box team that could investigate their requirements and
     deliver a product.
 
-  %blockquote.quote.rounded-big
-    .text
-      &#8220;Humanweb helped us
-      articulate our vision and better understand our audience.&#8221;
-    .dude
-      %b Reem Yared
-      %br
-      CEO, Help Around Town
 
   %h2.sans What we did
   %p
@@ -72,6 +79,8 @@
     users under the age of 18. We coordinated the launch of the website
     with a local marketing campaign.
 
+  %h2.sans The results
+
   %p{:style=>'margin-bottom:0'}
     Features of the site include:
   %ul.disc
@@ -80,10 +89,9 @@
     %li administrative functions that give an overview of site activity
     %li an application process for jobs that protects the privacy of both parties
 
-  %h2.sans The results
   %p
     The site provides the groundwork for Help Around Town to grow their
-    business over the next year.
+    business and organization over the next year.
     = render('shared/humanweb')
     continues to provide advice and support.
 
