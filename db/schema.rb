@@ -10,14 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111127040934) do
+ActiveRecord::Schema.define(:version => 20111130104116) do
 
   create_table "benchmark_results", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.text     "raw_results"
     t.string   "instance_type"
     t.string   "ami_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "placement"
   end
 
   create_table "posts", :force => true do |t|
