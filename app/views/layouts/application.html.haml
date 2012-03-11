@@ -18,11 +18,11 @@
   %body
     #page-header
       .container_12
-        .grid_4
+        .grid_5
           %h1#biglogo humanweb
 
           - @highlight ||= request.fullpath
-        .grid_8{:style=>'position:relative;'}
+        .grid_7{:style => 'display: relative;'}
           %ul#nav-menu
             - if @highlight == root_path
               %li.active= link_to "WHAT WE DO", root_path
@@ -58,6 +58,7 @@
 
         = content_for?(:content) ? yield(:content) : yield
 
-    .container_12
-      .grid_12#page-footer.node-right
-        &copy; 2010-#{DateTime.now.year} Human Web Solutions LLC
+    #footerContainer 
+      .container_12
+        .grid_12#page-footer.node-right
+          &copy; 2010-#{DateTime.now.year} Human Web Solutions LLC
