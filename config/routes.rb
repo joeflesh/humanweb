@@ -14,6 +14,8 @@ Humanweb::Application.routes.draw do
     get 'work/helparoundtown' => :helparoundtown
     get 'work/globalgreenarts' => :globalgreenarts
     get 'work/projectevie' => :projectevie
+    get 'work/rentstuff' => :rentstuff
+    get 'work/purplebinder' => :purplebinder
   end
 
   resources :posts, :path => 'blog'
