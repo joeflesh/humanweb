@@ -16,4 +16,24 @@
 
 - content_for :study_body do
   %p
-    RentStuff.com
+    %b
+      Start Date:
+      March 2012
+  %p
+    RentStuff recently closed a major round of funding and is ready to expand
+    their business into a new sector. They hired
+    = render 'shared/humanweb'
+    to design and build the site for this new part of their operations.
+  
+  %p
+    Though the new site is being developed as a separate piece of software from
+    the existing site, it will integrate perfectly with the extant database and
+    user interface.
+
+  %p
+    We're excited to work with RentStuff as they expand their business.
+
+  .center
+    = image_tag 'thumb-rentstuff.png', :style => 'border: 1px solid #ddd; margin-top: 10px;'
+
+

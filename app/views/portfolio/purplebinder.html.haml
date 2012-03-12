@@ -4,18 +4,51 @@
   Purple Binder
 
 -content_for :study_sidebar do
+
+  = image_tag 'thumb-pb.png', :style => 'border: 1px solid #ddd;'
   .item.light-green.rounded-small
     %h3 Technology Used
     %ul
       %li Rails 3.2
+      %li Dynamic frontend with EmberJS
+      %li Geolocation with Google API
       %li jQuery
       %li HTML5 with CSS3
-      %li Geolocation with Google API
-      %li Dynamic frontend with EmberJS
 
 - content_for :study_logo do
   = image_tag 'thumb-rentstuff.png'
 
 - content_for :study_body do
   %p
-    RentStuff.com
+    Purple Binder is an app that lets you find social services near you. It is
+    the first comprehensive, up-to-date directory of Chicago’s social safety
+    net.
+  %p
+    People in need can use Purple Binder to help themselves. Social workers can
+    use it to give their clients better referrals and waste less time hunting
+    for service providers. And doctors can use it to address the root causes of
+    their patients’ medical problems.
+  %p
+    Social workers will help keep Purple Binder up to date, sharing rather than
+    duplicating each others' efforts to find fresh info about Chicago’s social
+    services, from mental health clinics to after school programs. The app will
+    also make it easy for social workers to swap notes about specific service
+    providers and programs.
+  %p
+    %b The result:
+    a safety net that is easier for everyone to navigate.
+
+  %p
+    %strong Aren't there already sites that list social services?
+    %br
+    There are some. But few are comprehensive. Many are hard to use. Most are not
+    updated often enough. And none let you fix outdated information or connect
+    with other users. Purple Binder is the only online directory that makes it
+    easy to add new agencies and services, comment on them, and flag outdated
+    information.
+  %p
+    %strong Are you making money from this?
+    %br
+    None currently. Searching for social programs will always be free. We’re
+    working on some useful features for social workers, for which we’ll charge a
+    low monthly fee.
