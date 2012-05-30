@@ -10,7 +10,7 @@ Humanweb::Application.routes.draw do
 
   scope :controller => :portfolio do
     get 'work'=> :index
-    get 'work/southsidehealth' => :southsidehealth
+    # get 'work/southsidehealth' => :southsidehealth
     get 'work/helparoundtown' => :helparoundtown
     get 'work/globalgreenarts' => :globalgreenarts
     get 'work/projectevie' => :projectevie
