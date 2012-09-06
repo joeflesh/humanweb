@@ -1,7 +1,7 @@
 - content_for :title do
   Web Application Design, Custom Database Design, Social Services Database
 - content_for :study_title do
-  South Side Health
+  &ldquo;SSH&rdquo;
 
 - content_for :study_sidebar do
   -#.sidebar-slideshow
@@ -21,7 +21,7 @@
         controlsAfter:  '</div>'
       });
 
-  .item
+  -#.item
     %h3.center In partnership with
     = image_tag 'logo_urbanhealth.png'
     -#%br
@@ -43,9 +43,8 @@
 - content_for :study_body do
 
   %p
-    South Side Health is a site used by Health Leads volunteers to help
-    patients find essential health and social services, such as food pantries, employment
-    assistance, and childcare.
+    Humanweb built a site to help staff at a major non-profit find essential resources for
+    low-income patients.
 
   %h2.sans What they needed
   %p
@@ -82,19 +81,16 @@
       site would scale, all the while keeping the site operational for the
       5000+ users who depend on it.&#8221;
     .dude
-      %b Stephen Brown
-      %br
-      Directory of Technology Projects, Urban Health Institute
+      Director of Technology Projects, Major Chicago Hospital
 
   %h2.sans The results
   %p
-    South Side Health is used every day to connect thousands of
+    The site is used every day to connect thousands of
     clients with the social services that they need. By centralizing this information,
-    Health Leads helps to reduce unnecessary emergency
-    room visits, and more people find the essentials that
-    they need.
+    SSH helps to reduce unnecessary emergency
+    room visits.
 
-  %p.light-grey
+  -#%p.light-grey
     The South Side Health application is open source, licensed under the
     Apache 2.0 license. It is available in a Mercurial
     <a href="http://bitbucket.org/southsidehealth/southsidehealth">repository</a> hosted

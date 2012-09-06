@@ -12,26 +12,27 @@
       %li HTML5 with CSS3
 
 - content_for :study_logo do
-  .center= image_tag 'thumb-rentstuff.png'
+  = image_tag 'thumb-rentstuff.png'
 
 - content_for :study_body do
   %p
-    %b
-      Start Date:
-      March 2012
-  %p
-    RentStuff recently closed a major round of funding and is ready to expand
-    their business into a new sector. They hired
+    After closing a major round of funding in Spring 2012, RentStuff was ready
+    to expand their business into a new sector. They hired
     = render 'shared/humanweb'
-    to design and build the site for this new part of their operations.
-  
+    to design and build the web application for their new operations.
+
   %p
-    Though the new site is being developed as a separate piece of software from
-    the existing site, it will integrate perfectly with the extant database and
+    The new application allows rental businesses to more easily manage their business inventory.
+    At the same time, it plugs them into the RentStuff marketplace so that they
+    have access to RentStuff's broad customer base.
+
+  %p
+    Though the new site was developed as a separate piece of software from
+    the existing site, it integrates perfectly with the extant database and
     user interface.
 
   %p
-    We're excited to work with RentStuff as they expand their business.
+    We had a fantastic time working with RentStuff as they grew their company.
 
   .center
     = image_tag 'thumb-rentstuff.png', :style => 'border: 1px solid #ddd; margin-top: 10px;'
