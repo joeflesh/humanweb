@@ -1,49 +1,61 @@
 -content_for :title do
   Web Design, Rich Internet Applications, Software Consulting
 
-.grid_12
+.grid_12.headline-container
 
-  %h1.center{:style=>'margin-top: 3px;'}
+  %h1.center
     Humanweb builds online communities that solve problems.
 
-.clear{:style=>'height: 15px;'}
+  %h2.center
+    Infrastructure | Graphic Design | Software Development
 
-.grid_4
-  %h2 Who
-  %p
-    <span style="font-size:1.2em;">humanweb</span>
-    is an enthusiastic tech studio based in
-    <b>Chicago</b>.
-    With expertise in areas from scalable infrastructure to
-    graphic design, we take a <b>full-stack approach</b> to
-    software development.
-    We are
-    =link_to 'two full-time cofounders', team_path
-    who work with a network of designers and developers.
+.content-area.frontpage
+  .who
+    .headline.clearfix
+      .circle
+      %h3 Who
+    %p
+      HUMANWEB
+      is an enthusiastic tech studio based in
+      <b>Chicago</b>.
+      We are
+      =link_to 'two full-time cofounders', team_path
+      who work with a network of designers and developers.
+      -#
+        With expertise in areas from scalable infrastructure to
+        graphic design, we take a <b>full-stack approach</b> to
+        software development.
+  .what
+    .headline.clearfix
+      .circle
+      %h3 What
+    %p
+      
+      We
+      develop <b>scalable web
+      apps</b> that are incredibly easy to use and solve
+      real problems.
+      -#
+        We have provided turn-key technical solutions to
+        startups and rescued floundering projects, always using
+        the best tools for the job and up-to-date web standards. See our
+        %strong= link_to 'case studies', work_path
+        for more information.
+      
 
-.grid_4
-  %h2 What
-  %p
-    
-    We
-    develop <b>scalable web
-    applications</b> that are incredibly easy to use and solve
-    real problems.
-    We have provided turn-key technical solutions to
-    startups and rescued floundering projects, always using
-    the best tools for the job and up-to-date web standards. See our
-    %strong= link_to 'case studies', work_path
-    for more information.
-    
+  .how
+    .headline.clearfix
+      .circle
+      %h3 How
+    %p
+      We work with <b>clients as partners</b>, so your approval
+      is built in to our design process. We favor <b>Agile
+      development</b>, starting from a minimalist design and iteratively
+      adding more.
+      -#
+        At every step, we focus on building experiences
+        rather than just sets of features.
+        Best of all, we have fun doing it.
 
-.grid_4
-  %h2 How
-  %p
-    At every step, we focus on building experiences
-    rather than just sets of features.
-    We work with <b>clients as partners</b>, so your approval
-    is built in to our design process. We favor <b>Agile
-    development</b>, starting from a minimalist design and iteratively
-    adding more. Best of all, we have fun doing it.
-
-
+.hire-us.center
+  %h3 Hire Us

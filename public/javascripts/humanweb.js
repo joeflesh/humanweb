@@ -9,9 +9,9 @@ humanweb.init = function() {
 
   // Mouseover for nav bar
   $('#nav-menu li:not(.active) a').hover(function(){
-    $(this).animate({ 'color' : '#d71f26' }, 200);
+    $(this).animate({ 'color' : '#1face0' }, 200);
   }, function(){
-    $(this).animate({ 'color' : '#333333' }, 200);
+    $(this).animate({ 'color' : '#fff' }, 200);
   });
 
   // "Read more" overlay for case study summary mouseover 
