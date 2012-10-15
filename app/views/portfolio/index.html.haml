@@ -4,64 +4,60 @@
 .image-overlay{:style=>'display:none;'}
   .arrow read more &gt;
 
-.project.clearfix
-  .grid_8
-    %h1
-      Help Around Town
-      %span.light-grey | Featured Case Study
-      
-    %p
-      A Boston-based startup creates jobs through local, neighborhood-based
-      employment boards. Humanweb took the product from
-      concept to production, providing a full range of turn-key design and
-      development services.
-  .grid_4
-    %a.screenshot{:href => work_helparoundtown_path}
-      = image_tag 'thumb-hat.jpg', :title => 'Help Around Town'
+.headline-container.center
+  %h1 The HUMANWEB Portfolio
+  %h2 Showcasing custom-designed web products for our clientele.
 
-.clear{:style=>'height: 15px;'}
+.content-area.portfolio
+  .row
+    .project.grid_4
+      %a.screenshot{:href => work_helparoundtown_path}
+        = image_tag 'thumb-hat.jpg', :title => 'Help Around Town'
+      %h3 Help Around Town
+      %p
+        A Boston-based startup creates jobs through local, neighborhood-based
+        employment boards. Humanweb took the product from
+        concept to production, providing a full range of turn-key design and
+        development services.
 
-.project.grid_4
-  %h2 Purple Binder
-  %a.screenshot{:href => work_purplebinder_path}
-    = image_tag 'thumb-pb.png'
-  %p
-    A lookup tool for social service agencies, like Yelp for the social safety
-    net. Currently under development as Humanweb's first product.
+    .project.grid_4
+      %a.screenshot{:href => work_purplebinder_path}
+        = image_tag 'thumb-pb.png'
+      %h3 Purple Binder
+      %p
+        A lookup tool for social service agencies, like Yelp for the social safety
+        net. Currently under development as Humanweb's first product.
+  .row
+    .project.grid_4
+      %a.screenshot{:href => work_rentstuff_path}
+        = image_tag 'thumb-rentstuff.png'
+      %h3 RentStuff
+      %p
+        RentStuff is a portal for rentals of all kinds. They hired Humanweb
+        to design and build a site for a new sector of their business.
 
-.project.grid_4
-  %h2 RentStuff
-  %a.screenshot{:href => work_rentstuff_path}
-    = image_tag 'thumb-rentstuff.png'
-  %p
-    RentStuff is a portal for rentals of all kinds. They hired Humanweb
-    to design and build a site for a new sector of their business.
+    .project.grid_4
+      %a.screenshot{:href => work_southsidehealth_path}
+        = image_tag 'thumb-ssh.jpg'
+      %h3 &ldquo;SSH&rdquo;
+      %p
+        A site for a national non-profit to keep track of their referral information for social service agencies.
 
-.project.grid_4
-  %h2 &ldquo;SSH&rdquo;
-  %a.screenshot{:href => work_southsidehealth_path}
-    = image_tag 'thumb-ssh.jpg'
-  %p
-    A site for a national non-profit to keep track of their referral information for social service agencies.
+  .row
+    .project.grid_4
+      %a.screenshot{:href => work_projectevie_path} 
+        = image_tag 'thumb-evie.jpg'
+      %h3 Project EVIE
+      %p
+        A non-profit promoting electric vehicles needed a beautiful
+        website and a comprehensive social media campaign.
 
-.clear{:style=>'height: 15px;'}
-
-.project.grid_4
-  %h2 Project EVIE
-  %a.screenshot{:href => work_projectevie_path} 
-    = image_tag 'thumb-evie.jpg'
-  %p
-    A non-profit promoting electric vehicles needed a beautiful
-    website and a comprehensive social media campaign.
-
-.clear{:style=>'height: 15px;'}
-
-.project.grid_4
-  %h2 Global Green Arts
-  %a.screenshot{:href => work_globalgreenarts_path}< 
-    = image_tag 'thumb-gga.jpg'
-  %p
-    We worked with the veteran graphic designers at Global Green Arts to create
-    a promotional site showcasing their line of eco-friendly art materials.
+    .project.grid_4
+      %a.screenshot{:href => work_globalgreenarts_path}< 
+        = image_tag 'thumb-gga.jpg'
+      %h3 Global Green Arts
+      %p
+        We worked with the veteran graphic designers at Global Green Arts to create
+        a promotional site showcasing their line of eco-friendly art materials.
 
 

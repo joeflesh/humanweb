@@ -1,54 +1,41 @@
 -content_for :title do
   Team
 
-.container_12
+.grid_12.headline-container.center
+  %h1 Nice to meet you!
+  %h2
+    We develop long-term relationships with
+    top-notch clients, bringing our energy and expertise
+    to the table every single day.
 
-  .grid_12
-    %h1
-      Here we are
-      %span.light-grey | Nice to meet you too!
+.clear
 
-  .clear
+.grid_6
+  .person
+    -#.image.joe
+    -#.bio
+    %h3 Joseph Flesh
+    %p
+      Joe enjoys wearing many hats,
+      from interface design to keeping books
+      and being the main point of contact for clients. 
+      Prior to humanweb, Joe researched simulation technologies at a
+      Department of Energy laboratory, worked in corporate IT, and had a stint
+      as a journalist. He enjoys long walks, world travel, and
+      breakfast.
 
-  .grid_7
-    .person
-      -#.image.joe
-      -#.bio
-      %h2.sans Joseph Flesh
-      %p
-        Joe enjoys wearing many hats,
-        from <strong>UX design</strong> to keeping books
-        and being the <strong>main point of contact</strong> for clients. 
-        Prior to humanweb, Joe researched simulation technologies at a
-        Department of Energy laboratory, worked in corporate IT, and had a stint
-        as a journalist. He enjoys brewing beer, <strong>world travel</strong>, and
-        breakfast.
-
-    .person{:style=>'margin-top:20px;'}
-      -#.image.declan
-      -#.bio
-      %h2.sans Declan Frye
-      %p
-        Declan is an exceptionally clear thinker, and often distills
-        his thoughts into beautiful application specs.
-        He's responsible for the
-        heavy lifting in <strong>application architecture</strong>. A Manhattan native, he loves the
-        weather and sailing in the Bay Area. He owns a <strong>wooden sailboat</strong>
-        and studies Brazilian jujitsu.
+.grid_6
+  .person
+    -#.image.declan
+    -#.bio
+    %h3 Declan Frye
+    %p
+      Declan is an exceptionally clear thinker, and often distills
+      his thoughts into beautiful application specs.
+      He's responsible for the
+      heavy lifting in application architecture. A Manhattan native, he loves the
+      weather and sailing in the Bay Area. He owns a wooden sailboat
+      and studies Brazilian jujitsu.
 
 
-  .grid_5
-    .node.light-green.rounded-small
-      %p
-        We develop <strong>long-term relationships with
-        top-notch clients</strong>, bringing our energy and expertise
-        to the table every single day.
-      %p
-        Technology should make life more efficient. We
-        harness the internet to solve your problems.
-        
-      %p
-        %strong= link_to 'Contact us', contact_path
-        to learn more.
 
- 
