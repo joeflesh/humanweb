@@ -33,10 +33,10 @@ body {
 .right-node.top { margin-top: 17px; }
 .node { padding: 20px; }
 a {
-  color: #2C3088;
+  color: #1face0; }
 }
 a:visited {color: #2C3088;}
-p a:hover, a.text:hover { border-bottom: 1px dotted #2C3088; }
+p a:hover, a.text:hover { border-bottom: 1px dotted #1face0; }
 a img {border: 0}
 p, ul {
   line-height: 1.7em;
@@ -54,18 +54,18 @@ ul.disc, ul.disc li { list-style: disc outside none;}
 ul.disc li {margin-left: 20px; }
 
 h1 { font-family: 'BebasNeueRegular'; font-size: 36px; margin-bottom: 6px; color: #fff;}
-h1.smooth { font-family: 'CabinRegular'; }
-  h1.smooth strong { font-family: 'CabinBold'; font-weight: normal; }
-h1.light { font-family: 'CartoGothicStdBook'; }
-h1.light b { font-family: 'CartoGothicStdBold'; font-weight: normal; }
 
-p { color: #808080; font-family: 'CartoGothicStdBook'; }
-.content-area p { color: #666; }
+p, ul { font-family: 'CartoGothicStdBook'; }
+p b, ul b { font-family: 'CartoGothicStdBold'; font-weight: normal; }
+/* paragraph color on white background */
+.content-area p { color: #555; }
+
+/* text color on black background */
+p, h2 { color: #999; }
 
 h2 {
   font-family: 'BebasNeueRegular';
   font-size: 18px;
-  color: #808080;
 }
 h2.sans, .blog article h2 {
   font-family: 'Helvetica', 'Arial', sans-serif; 
@@ -148,6 +148,7 @@ h3 {
       font-weight: bold;
       float: left;
       margin-left: 40px;
+      font-family: Helvetica, Arial, sans-serif;
     }
       ul#nav-menu li.active a, ul#nav-menu li.active a:hover {
         color: #1face0;
@@ -218,10 +219,7 @@ h3 {
 
 .content-area.frontpage p {
   font-size: 16px;
-  font-family: 'CartoGothicStdBook';
   line-height: 26px;
-  color: #7c7c7c;
-  b { font-family: 'CartoGothicStdBold'; font-weight: normal; }
 }
   
 .content-area.frontpage .circle {
@@ -231,17 +229,17 @@ h3 {
   margin-right: 16px;
 }
 
+/* these are the sub-headlines Who, What, How */
 .content-area.frontpage .headline {
   margin-bottom: 15px;
 }
-
 .content-area.frontpage .headline h3 {
   position: relative; top: 8px;
 }
-
 .content-area.frontpage .what .circle { background-position: -45px 0px; }
 .content-area.frontpage .how .circle  { background-position: -90px 0px; }
 
+/* HIRE US block at bottom of the content area */
 a.hire-us {
   display: block;
   background-color: #373737;
@@ -306,6 +304,8 @@ a.hire-us:hover { background-color: #3F3F3F; }
 
 /*                CASE STUDY
 ***********************************************/
+
+.content-area-container: { margin: 20px; }
 
 .smaller-font { font-size: 0.9em; }
 .no-bottom-margin { margin-bottom: 0; }
@@ -487,3 +487,12 @@ form.edit_post label {
   /*font-family: 'CartoGothicStdBook';*/
   margin-top: 25px;
 }
+
+/*                CASE STUDIES
+****************************************************************/
+ul.case-studies li {
+  display: block; float: left;
+  margin-right: 1.3em;
+}
+
+

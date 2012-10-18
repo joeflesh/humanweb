@@ -1,22 +1,17 @@
 - content_for :content do
- 
-
-  .grid_8
-    %h1.dark-grey.no-bottom-margin
+  
+  .headline-container.center
+    %h1
       = yield :study_title
-      %span.light-grey | Case Study
-    %div
+    %h2 Case study
+
+  .content-area
+    .content-area-container
       = link_to "< back to portfolio", work_path, :class => 'light-grey'
+      .clearfix{:style=>'margin-top: 1.4em;'}
 
-    .clearfix{:style=>'margin-top: 1.4em;'}
+      = yield :study_body
 
-    = yield :study_body
-
-  .grid_4.right-sidebar
-    -#.rounded-big
-    = yield :study_sidebar
-    .item.light-green.rounded-small
-      %h3 More Case Studies
       = render 'shared/casestudies' 
 
 = render :template => 'layouts/application'

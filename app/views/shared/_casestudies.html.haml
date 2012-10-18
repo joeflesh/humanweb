@@ -1,4 +1,5 @@
-%ul
+%ul.case-studies
+  %li <b>More Case Studies:</b>
   - unless request.fullpath == work_helparoundtown_path
     %li= link_to "Help Around Town", work_helparoundtown_path, :class => 'text'
   - unless request.fullpath == work_purplebinder_path
