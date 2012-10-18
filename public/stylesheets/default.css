@@ -77,7 +77,9 @@ h3 {
   font-family: 'CartoGothicStdBold';
   font-size: 22px;
   font-weight: normal;
+  color: #fff;
 }
+.content-area h3 { color: #222; }
 .row { padding: 5px 0; }
 
 
@@ -332,17 +334,20 @@ a.hire-us:hover { background-color: #3F3F3F; }
  
 /*                      TEAM
 **************************************************/
-.image.joe { background: url('../images/mugshot_joe.jpg') no-repeat;}
-.image.declan { background: url('../images/mugshot_declan2.jpg')  no-repeat; }
+.image.joe { background: url('../images/portrait-joe.jpg') no-repeat;}
+.image.declan { background: url('../images/portrait-declan.jpg')  no-repeat; }
 .person h3 { color: #fff; }
   .person .image {
     width: 100px;
     height: 125px;
     float: left;
-    margin:  5px 20px 0 0;
+    margin-top: 5px;
+    /*margin:  5px 20px 0 0;*/
     border: 1px solid #e6e6e6;
   }
-  .person .bio { margin-left: 130px; }
+  .person .text {
+    margin-left: 120px;
+  }
 
 
 /*                  SLIDE SHOW
@@ -471,4 +476,14 @@ a.hire-us:hover { background-color: #3F3F3F; }
 form.edit_post label {
   font-weight: bold;
   color: #999;
+}
+
+/*                       HIRE US / CONTACT
+**************************************************************/
+.contact-info img {
+  margin-top: 25px;
+}
+.contact-info h3 {
+  /*font-family: 'CartoGothicStdBook';*/
+  margin-top: 25px;
 }

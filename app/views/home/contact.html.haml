@@ -1,22 +1,30 @@
 -content_for :title do
   Contact
 
-.grid_12
-  .left-node
-    %h1 Let&#8217;s talk about the next game-changer.
+.grid_12.headline-container.center
+  
+  %h1 Let&#8217;s talk about the next game-changer.
 
-    %p
-      If you want to hire a smart, flexible, and friendly team for
-      your web project, we're it.
+  %h2
+    If you want to hire a smart, flexible, &amp; friendly team for
+    your web project, we're it.
 
 .clear
 
-.grid_4.prefix_4
-  %div{:style=>'margin: 65px auto 0; width: 250px;'}
-    %p{:style=>'text-align:left; font-size: 1.3em;'}
-      = render 'shared/humanweb'
-      %br
-      talk (at) humanweb.co
-      %br
-      617.910.7317
-    
+.grid_4.prefix_4.center.contact-info
+  = image_tag 'logo-bigger.png'
+  %br
+  %h3 HUMANWEB
+  %p
+    talk@humanweb.co
+    %br
+    617 / 910 / 7317
+  -#
+    %div{:style=>'margin: 65px auto 0; width: 250px;'}
+      %p{:style=>'text-align:left; font-size: 1.3em;'}
+        = render 'shared/humanweb'
+        %br
+        talk (at) humanweb.co
+        %br
+        617.910.7317
+      
