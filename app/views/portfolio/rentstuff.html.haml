@@ -14,6 +14,9 @@
 - content_for :study_logo do
   = image_tag 'thumb-rentstuff.png'
 
+- content_for :study_pics do
+  = image_tag 'screenshot-rentstuff.png', :class => 'screenshot'
+
 - content_for :study_body do
   %p
     After closing a major round of funding in Spring 2012, RentStuff was ready
@@ -33,8 +36,5 @@
 
   %p
     We had a fantastic time working with RentStuff as they grew their company.
-
-  .center
-    = image_tag 'thumb-rentstuff.png', :style => 'border: 1px solid #ddd; margin-top: 10px;'
 
 

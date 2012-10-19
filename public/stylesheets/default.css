@@ -338,7 +338,7 @@ a.hire-us:hover { background-color: #3F3F3F; }
   }
   .quote p.dude { text-align: right; }
   .quote.no-top-border { border-top: 0; }
-  .quote.no-top-margin { margin-top: 0; }
+  .quote.no-top-margin, .no-top-margin { margin-top: 0; }
 
 .study-body p, .study-body ul {
   line-height: 21px;
@@ -515,3 +515,9 @@ ul.case-studies li {
   margin: 20px;
 }
 .content-area .padding-30 { padding: 10px 30px 30px 30px; }
+
+img.screenshot {
+  padding: 10px;
+  box-shadow: 0px 0px 6px #888;
+  width: 530px;
+}
