@@ -32,6 +32,8 @@ body {
 .right-node { margin-top: 12px; margin-right: 10px; }
 .right-node.top { margin-top: 17px; }
 .node { padding: 20px; }
+.left-node { padding: 20px 10px 20px 20px; }
+.right-node { padding: 20px 20px 20px 10px; }
 a {
   color: #1face0; }
 }
@@ -58,7 +60,7 @@ h1 { font-family: 'BebasNeueRegular'; font-size: 36px; margin-bottom: 6px; color
 p, ul { font-family: 'CartoGothicStdBook'; }
 p b, ul b { font-family: 'CartoGothicStdBold'; font-weight: normal; }
 /* paragraph color on white background */
-.content-area p { color: #555; }
+.content-area p, .content-area ul { color: #555; }
 
 /* text color on black background */
 p, h2 { color: #999; }
@@ -304,11 +306,15 @@ a.hire-us:hover { background-color: #3F3F3F; }
 
 /*                CASE STUDY
 ***********************************************/
-
-.content-area-container: { margin: 20px; }
+.back-to-portfolio a:hover { border-bottom: 0; }
+.back-to-portfolio { padding-top: 12px; padding-bottom: 8px; }
 
 .smaller-font { font-size: 0.9em; }
 .no-bottom-margin { margin-bottom: 0; }
+.no-bottom-padding { margin-bottom: 0; }
+
+.left-column { width: 550px; float: left; }
+.right-column { width: 290px; float: right; padding-left: 30px; }
 
 .right-sidebar { margin-top: 9px; }
   .right-sidebar .item { padding: 20px; margin-top: 25px; }
@@ -319,18 +325,27 @@ a.hire-us:hover { background-color: #3F3F3F; }
 
 
 .quote {
-  width: 90%;
-  background-color: #e7e7ee;
-  margin: 1.6em auto;
-  padding: 1.2em;
   line-height: 1.5em;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  padding: 30px 0px;
+  margin: 30px 0px;
 }
-  .quote .text {
+  .quote p {
     font-style: italic; font-family: Georgia, serif;
     font-size: 1.3em; line-height: 1.4em;
     margin-bottom: 0.8em;
   }
-  .quote .dude { text-align: right; font-size: 1.2em;}
+  .quote p.dude { text-align: right; }
+  .quote.no-top-border { border-top: 0; }
+  .quote.no-top-margin { margin-top: 0; }
+
+.study-body p, .study-body ul {
+  line-height: 21px;
+}
+.study-body p:first-child {
+  margin-top: 8px;
+}
  
 /*                      TEAM
 **************************************************/
@@ -343,7 +358,7 @@ a.hire-us:hover { background-color: #3F3F3F; }
     float: left;
     margin-top: 5px;
     /*margin:  5px 20px 0 0;*/
-    border: 1px solid #e6e6e6;
+    border: 1px solid #888;
   }
   .person .text {
     margin-left: 120px;
@@ -490,9 +505,13 @@ form.edit_post label {
 
 /*                CASE STUDIES
 ****************************************************************/
+
 ul.case-studies li {
   display: block; float: left;
   margin-right: 1.3em;
 }
 
-
+.content-area .padding {
+  margin: 20px;
+}
+.content-area .padding-30 { padding: 10px 30px 30px 30px; }

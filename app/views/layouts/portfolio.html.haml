@@ -6,12 +6,20 @@
     %h2 Case study
 
   .content-area
-    .content-area-container
-      = link_to "< back to portfolio", work_path, :class => 'light-grey'
-      .clearfix{:style=>'margin-top: 1.4em;'}
+    .grid_12
+      .padding-30
+        .back-to-portfolio
+          %p= link_to "< back to portfolio", work_path, :class => 'light-grey'
+      
+        .left-column
+          = yield :study_pics
 
-      = yield :study_body
-
-      = render 'shared/casestudies' 
+        .right-column.study-body
+          = yield :study_body
+        
+    .grid_12
+      .padding-30
+      .padding-30
+        = render 'shared/casestudies' 
 
 = render :template => 'layouts/application'

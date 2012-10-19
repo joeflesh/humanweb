@@ -14,7 +14,7 @@
 - content_for :study_logo do
   = image_tag 'logo_globalgreen.png'
 
-- content_for :study_body do
+- content_for :study_pics do
   .body-slideshow
     %ul
       %li
@@ -32,8 +32,19 @@
       controlsAfter: '</div>'
     });
 
+  %blockquote.quote
+    %p
+      &#8220;The site
+      looks fantastic and really reflects our brand. And it's super
+      easy to edit and update. &#8221;
+    %p.dude
+      Steven Wade
+      %br
+      Founder, Global Green Arts
 
-  %h2.sans What they needed
+- content_for :study_body do
+
+  %h3 What they needed
   %p
     When brothers Steven and David Wade launched their art supply company,
     they needed a site to communicate their vision of sustainable art to
@@ -41,22 +52,14 @@
     deliver perfection down to the pixel. Additionally, the site needed to
     be easily editable to grow and evolve with their company.
 
-  %blockquote.quote.rounded-big
-    .text
-      &#8220;The site
-      looks fantastic and we're able to edit it easily.&#8221;
-    .dude
-      %b Steven Wade
-      %br
-      Founder, Global Green Arts
 
-  %h2.sans What we did
+  %h3 What we did
   %p 
     We built a heavily customized Wordpress
     installation that perfectly conveys the earthy, art-centered brand of
     Global Green Arts.
 
-  %h2.sans The results
+  %h3 The results
   %p
     Global Green Arts recently signed their first distribution deal with
     a major chain of art supply stores, and we're excited to continue our

@@ -15,7 +15,7 @@
       %li Twitter and Facebook integration
       %li MailChimp for huge mailings
 
-- content_for :study_body do
+- content_for :study_pics do
   .body-slideshow
     %ul
       %li
@@ -33,15 +33,25 @@
       controlsAfter: '</div>'
     });
 
+  %blockquote.quote
+    %p
+      &#8220;The clean, spacious design of our site goes perfectly with
+      our organization's brand.&#8221;
+    %p.dude
+      %b Jonathan Azrielant
+      %br
+      Founder, Project EVIE
 
-  %h2.sans What they needed
+
+- content_for :study_body do
+  %h3 What they needed
   %p
     
     Project EVIE is a non-profit organization dedicated to promoting the
     adoption of electric vehicles. Humanweb sponsored them by providing
     a beautifully designed web presence.
 
-  %h2.sans What we did
+  %h3 What we did
   %p
     Coordinating with EVIE's marketing team, we designed a site incorporating
     smooth, spacious elements that complemented their organization's brand.
@@ -50,21 +60,12 @@
     mini-site that showed the plan for the entire trip. The mini-site
     was used in presentations to top auto industry executives.
 
-  %h2.sans The result
+  %h3 The result
   %p
     EVIE generated a lot of buzz and raised awareness of fully electric
     vehicles as practical, environmentally superior alternatives.
 
-  %blockquote.quote.rounded-big
-    .text
-      &#8220;The clean, spacious design of our site goes perfectly with
-      our organization's brand.&#8221;
-    .dude
-      %b Jonathan Azrielant
-      %br
-      Founder, Project EVIE
-
-  %p.center
+    %p.center
     %em The Project EVIE organization is now defunct, but the electric vehicle dream lives on.
 
   %h3 In the press

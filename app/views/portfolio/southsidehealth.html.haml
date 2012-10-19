@@ -43,13 +43,30 @@
       %li MySQL
       %li Geolocation with the Google API
 
+- content_for :study_pics do
+  %blockquote.quote.no-top-margin
+    %p.text
+      &#8220;I was impressed by their personable handling of large focus groups
+      and their ability to draw out subtleties in user motivation. Subsequently they
+      translated those subtleties into good design. Though the underlying
+      technology is complicated, the user design is simple and inviting.&#8221;
+
+  %blockquote.quote.no-top-border.no-top-margin
+    %p
+      &#8220;They took a previous contractor's design and re-architected it so the
+      site would scale, all the while keeping the site operational for the
+      5000+ users who depend on it.&#8221;
+    %p.dude
+      Director of Technology Projects, Major Chicago Hospital
+
+
 - content_for :study_body do
 
   %p
     Humanweb built a site to help staff at a major non-profit find essential resources for
     low-income patients.
 
-  %h2.sans What they needed
+  %h3 What they needed
   %p
     When
     =render('shared/humanweb')
@@ -58,15 +75,9 @@
     pointed towards a deep-seated need for such an application, and only made
     us more excited to take on the project.
 
-  %blockquote.quote.rounded-big
-    .text
-      &#8220;I was impressed by their personable handling of large focus groups
-      and their ability to draw out subtleties in user motivation. Subsequently they
-      translated those subtleties into good design. Though the underlying
-      technology is complicated, the user design is simple and inviting.&#8221;
 
 
-  %h2.sans What we did
+  %h3 What we did
   %p
     We spent the first few weeks updating the look of the site and fixing
     bugs and usability issues. Then,
@@ -78,15 +89,8 @@
     process and were able to get immediate feedback from the people to whom
     the site mattered most.
 
-  %blockquote.quote.rounded-big
-    .text
-      &#8220;They took a previous contractor's design and re-architected it so the
-      site would scale, all the while keeping the site operational for the
-      5000+ users who depend on it.&#8221;
-    .dude
-      Director of Technology Projects, Major Chicago Hospital
 
-  %h2.sans The results
+  %h3 The results
   %p
     The site is used every day to connect thousands of
     clients with the social services that they need. By centralizing this information,
