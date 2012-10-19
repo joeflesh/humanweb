@@ -4,15 +4,15 @@
   - if indexpage
       %h1.title
         = link_to post.title, post_path(post)
-    - else
-      %h1.title= post.title
+  - else
+    %h1.title= post.title
+  %h2= post.created_at.strftime('%B %d, %Y')
 
   .content-area
-    .time.light-grey
-      = post.created_at.strftime('%B %d, %Y')
-    .body 
-      = BlueCloth.new(post.body).to_html.html_safe
+    .padding-30 
+      .body 
+        = BlueCloth.new(post.body).to_html.html_safe
 
-    - unless indexpage
-      %p{:style => 'margin-top: 1em;'}
-        = link_to 'back to blog', posts_path, :class => 'light-grey'
+      - unless indexpage
+        %p{:style => 'margin-top: 1em;'}
+          = link_to 'back to blog', posts_path, :class => 'light-grey'

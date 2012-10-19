@@ -18,6 +18,24 @@
 - content_for :study_logo do
   = image_tag 'thumb-rentstuff.png'
 
+- content_for :study_pics do
+  .body-slideshow{:style=>'height: 340px;'}
+    %ul
+      %li
+        = image_tag 'screenshot-pb1.png'
+      %li
+        = image_tag 'screenshot-pb2.png'
+      %li
+        = image_tag 'screenshot-pb3.png'
+  :javascript 
+    $('.body-slideshow ul li').css('height', '387px');
+    $('.body-slideshow').easySlider({
+      numeric: true,
+      controlsBefore: '<div class="numeric-slide-controls">',
+      controlsAfter:  '</div>'
+    });
+
+
 - content_for :study_body do
   %p
     Purple Binder is an app that lets you find social services near you. It is
